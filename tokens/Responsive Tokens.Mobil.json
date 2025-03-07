@@ -1,18 +1,4 @@
 {
-  "Text Input Height": {
-    "$type": "number",
-    "$value": "{Sizing.40}",
-    "$description": "",
-    "$extensions": {
-      "com.figma": {
-        "hiddenFromPublishing": false,
-        "scopes": [
-          "WIDTH_HEIGHT"
-        ],
-        "codeSyntax": {}
-      }
-    }
-  },
   "Icon Size": {
     "$type": "number",
     "$value": "{Size.32}",

@@ -162,6 +162,20 @@
         }
       }
     },
+    "Tag": {
+      "$type": "color",
+      "$value": "{Color.Green.200}",
+      "$description": "",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
     "Text": {
       "Primary": {
         "$type": "color",
@@ -538,21 +552,6 @@
     "4": {
       "$type": "number",
       "$value": "{Size.4}",
-      "$description": "",
-      "$extensions": {
-        "com.figma": {
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "WIDTH_HEIGHT",
-            "STROKE_FLOAT"
-          ],
-          "codeSyntax": {}
-        }
-      }
-    },
-    "16": {
-      "$type": "number",
-      "$value": "{Size.16}",
       "$description": "",
       "$extensions": {
         "com.figma": {

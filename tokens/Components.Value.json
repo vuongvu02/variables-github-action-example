@@ -249,7 +249,7 @@
           },
           "Disabled": {
             "$type": "color",
-            "$value": "{Color.Interactive.Background.Disabled}",
+            "$value": "{Color.Text.Disabled}",
             "$description": "",
             "$extensions": {
               "com.figma": {
@@ -274,7 +274,8 @@
                 "hiddenFromPublishing": false,
                 "scopes": [
                   "FRAME_FILL",
-                  "SHAPE_FILL"
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
                 ],
                 "codeSyntax": {}
               }
@@ -287,7 +288,11 @@
             "$extensions": {
               "com.figma": {
                 "hiddenFromPublishing": false,
-                "scopes": [],
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
+                ],
                 "codeSyntax": {}
               }
             }
@@ -299,7 +304,11 @@
             "$extensions": {
               "com.figma": {
                 "hiddenFromPublishing": false,
-                "scopes": [],
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
+                ],
                 "codeSyntax": {}
               }
             }
@@ -311,7 +320,11 @@
             "$extensions": {
               "com.figma": {
                 "hiddenFromPublishing": false,
-                "scopes": [],
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
+                ],
                 "codeSyntax": {}
               }
             }
@@ -323,7 +336,11 @@
             "$extensions": {
               "com.figma": {
                 "hiddenFromPublishing": false,
-                "scopes": [],
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
+                ],
                 "codeSyntax": {}
               }
             }
@@ -337,7 +354,11 @@
             "$extensions": {
               "com.figma": {
                 "hiddenFromPublishing": false,
-                "scopes": [],
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
+                ],
                 "codeSyntax": {}
               }
             }
@@ -349,7 +370,11 @@
             "$extensions": {
               "com.figma": {
                 "hiddenFromPublishing": false,
-                "scopes": [],
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
+                ],
                 "codeSyntax": {}
               }
             }
@@ -361,7 +386,11 @@
             "$extensions": {
               "com.figma": {
                 "hiddenFromPublishing": false,
-                "scopes": [],
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
+                ],
                 "codeSyntax": {}
               }
             }
@@ -373,7 +402,11 @@
             "$extensions": {
               "com.figma": {
                 "hiddenFromPublishing": false,
-                "scopes": [],
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
+                ],
                 "codeSyntax": {}
               }
             }
@@ -385,7 +418,11 @@
             "$extensions": {
               "com.figma": {
                 "hiddenFromPublishing": false,
-                "scopes": [],
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
+                ],
                 "codeSyntax": {}
               }
             }
@@ -397,7 +434,11 @@
             "$extensions": {
               "com.figma": {
                 "hiddenFromPublishing": false,
-                "scopes": [],
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL",
+                  "STROKE_COLOR"
+                ],
                 "codeSyntax": {}
               }
             }
