@@ -86,20 +86,6 @@
         }
       }
     },
-    "Divider": {
-      "$type": "color",
-      "$value": "{Color.Neutral.200}",
-      "$description": "",
-      "$extensions": {
-        "com.figma": {
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_COLOR"
-          ],
-          "codeSyntax": {}
-        }
-      }
-    },
     "Elevation": {
       "Background 1": {
         "$type": "color",
@@ -159,6 +145,20 @@
             ],
             "codeSyntax": {}
           }
+        }
+      }
+    },
+    "Divider": {
+      "$type": "color",
+      "$value": "{Color.Neutral.200}",
+      "$description": "",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "codeSyntax": {}
         }
       }
     },
@@ -319,6 +319,36 @@
               ],
               "codeSyntax": {}
             }
+          }
+        }
+      },
+      "Background Alternative 1": {
+        "$type": "color",
+        "$value": "{Color.Green.700}",
+        "$description": "",
+        "$extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "Background Alternative 2": {
+        "$type": "color",
+        "$value": "{Color.Green.800}",
+        "$description": "",
+        "$extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {}
           }
         }
       },

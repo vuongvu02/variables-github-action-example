@@ -53,7 +53,7 @@
               "codeSyntax": {}
             }
           },
-          "Hover": {
+          "Active": {
             "$type": "color",
             "$value": "{Color.Interactive.Underline.Hover Neutral}",
             "$description": "",
@@ -79,31 +79,7 @@
               }
             }
           },
-          "Hover": {
-            "$type": "color",
-            "$value": "{Color.Interactive.Underline.Hover}",
-            "$description": "",
-            "$extensions": {
-              "com.figma": {
-                "hiddenFromPublishing": false,
-                "scopes": [],
-                "codeSyntax": {}
-              }
-            }
-          },
           "Active": {
-            "$type": "color",
-            "$value": "{Color.Interactive.Underline.Hover}",
-            "$description": "",
-            "$extensions": {
-              "com.figma": {
-                "hiddenFromPublishing": false,
-                "scopes": [],
-                "codeSyntax": {}
-              }
-            }
-          },
-          "Focus": {
             "$type": "color",
             "$value": "{Color.Interactive.Underline.Hover}",
             "$description": "",
