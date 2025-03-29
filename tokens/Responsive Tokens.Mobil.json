@@ -1,9 +1,9 @@
 {
   "Icon Size": {
-    "$type": "number",
-    "$value": "{Size.32}",
-    "$description": "",
-    "$extensions": {
+    "type": "number",
+    "value": "{Size.32}",
+    "description": "",
+    "extensions": {
       "com.figma": {
         "hiddenFromPublishing": false,
         "scopes": [
@@ -14,10 +14,10 @@
     }
   },
   "Text Input Vertical Padding": {
-    "$type": "number",
-    "$value": "{Spacing.8}",
-    "$description": "",
-    "$extensions": {
+    "type": "number",
+    "value": "{Spacing.8}",
+    "description": "",
+    "extensions": {
       "com.figma": {
         "hiddenFromPublishing": false,
         "scopes": [
