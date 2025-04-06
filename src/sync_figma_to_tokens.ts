@@ -2,8 +2,6 @@ import 'dotenv/config'
 import * as fs from 'fs'
 
 import FigmaApi from './figma_api.js'
-
-import { green } from './utils.js'
 import { tokenFilesFromLocalVariables } from './token_export.js'
 
 /**
@@ -42,7 +40,7 @@ async function main() {
     console.log(`Wrote ${fileName}`)
   })
 
-  console.log(green(`✅ Tokens files have been written to the ${outputDir} directory`))
+  console.log(`\x1b[32m✅ Tokens files have been written to the ${outputDir} directory\x1b[0m`)
 }
 
 main()
