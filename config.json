@@ -2,6 +2,7 @@
   "source": ["tokens/**/*.json"],
   "platforms": {
     "css": {
+      "prefix": "bls-",
       "transformGroup": "css",
       "buildPath": "build/css/",
       "files": [
@@ -11,14 +12,29 @@
         }
       ]
     },
-    "js": {
-      "transformGroup": "js",
-      "buildPath": "build/js/",
-      "transforms": ["name/camel"],
+    "scss": {
+      "prefix": "bls-",
+      "transformGroup": "css",
+      "buildPath": "build/scss/",
       "files": [
         {
-          "destination": "tokens.js",
-          "format": "javascript/module"
+          "destination": "variables.scss",
+          "format": "scss/variables"
+        }
+      ]
+    },
+    "ts": {
+      "prefix": "bls-",
+      "transformGroup": "js",
+      "buildPath": "build/ts/",
+      "files": [
+        {
+          "destination": "variables.js",
+          "format": "javascript/es6"
+        },
+        {
+          "destination": "variables.d.ts",
+          "format": "typescript/es6-declarations"
         }
       ]
     }
