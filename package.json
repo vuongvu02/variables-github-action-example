@@ -27,5 +27,6 @@
       "esbuild",
       "style-dictionary"
     ]
-  }
+  },
+  "packageManager": "pnpm@8.6.0"
 }
