@@ -21,18 +21,21 @@ function tokenValueFromVariable(
   localVariables: { [id: string]: LocalVariable },
 ) {
   const value = variable.valuesByMode[modeId]
-  if (typeof value === 'object') {
-    if ('type' in value && value.type === 'VARIABLE_ALIAS') {
-      const aliasedVariable = localVariables[value.id]
-      return `{${aliasedVariable.name.replace(/\//g, '.')}}`
-    } else if ('r' in value) {
-      return rgbToHex(value)
-    }
 
-    throw new Error(`Format of variable value is invalid: ${value}`)
-  } else {
+  if (typeof value !== 'object') {
     return value
   }
+
+  if ('type' in value && value.type === 'VARIABLE_ALIAS') {
+    const aliasedVariable = localVariables[value.id]
+    return `{${aliasedVariable.name.replace(/\//g, '.')}}`
+  }
+
+  if ('r' in value) {
+    return rgbToHex(value)
+  }
+
+  throw new Error(`Invalid variable value format: ${JSON.stringify(value)}`)
 }
 
 export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVariablesResponse) {
