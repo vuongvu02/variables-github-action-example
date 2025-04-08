@@ -1,11 +1,13 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "variables-github-action-example",
   "type": "module",
   "scripts": {
     "prettier:check": "prettier --check src/",
-    "sync-tokens": "tsx src/sync_figma_to_tokens.ts",
+    "sync-tokens": "pnpm clean &&  tsx src/sync_figma_to_tokens.ts",
     "test": "jest",
-    "build": "pnpm clean && pnpm sync-tokens && style-dictionary build",
+    "build": "tsx src/build.ts",
+    "build2": "style-dictionary build",
     "clean": "rm -f tokens/*.json; rm -rf build/;"
   },
   "devDependencies": {

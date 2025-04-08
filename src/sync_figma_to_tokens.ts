@@ -40,7 +40,7 @@ async function main() {
     console.log(`Wrote ${fileName}`)
   })
 
-  console.log(`\x1b[32m✅ Tokens files have been written to the ${outputDir} directory\x1b[0m`)
+  console.log(`\n\x1b[32m✅ Tokens files have been written to the ${outputDir} directory\x1b[0m`)
 }
 
 main()

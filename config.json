@@ -2,7 +2,7 @@
   "source": ["tokens/**/*.json"],
   "platforms": {
     "css": {
-      "prefix": "bls-",
+      // "prefix": "bls-",
       "transformGroup": "css",
       "buildPath": "build/css/",
       "files": [
@@ -13,8 +13,8 @@
       ]
     },
     "scss": {
-      "prefix": "bls-",
-      "transformGroup": "css",
+      // "prefix": "bls-",
+      "transformGroup": "scss",
       "buildPath": "build/scss/",
       "files": [
         {
@@ -24,7 +24,7 @@
       ]
     },
     "ts": {
-      "prefix": "bls-",
+      // "prefix": "bls-",
       "transformGroup": "js",
       "buildPath": "build/ts/",
       "files": [
