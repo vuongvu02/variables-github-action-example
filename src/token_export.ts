@@ -66,10 +66,10 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
       })
 
       const token: Token = {
-        type: tokenTypeFromVariable(variable),
-        value: tokenValueFromVariable(variable, mode.modeId, localVariables),
-        description: variable.description,
-        extensions: {
+        $type: tokenTypeFromVariable(variable),
+        $value: tokenValueFromVariable(variable, mode.modeId, localVariables),
+        $description: variable.description,
+        $extensions: {
           'com.figma': {
             hiddenFromPublishing: variable.hiddenFromPublishing,
             scopes: variable.scopes,

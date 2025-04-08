@@ -2,10 +2,10 @@
   "Font": {
     "Family": {
       "Primary": {
-        "type": "string",
-        "value": "Titillium Web",
-        "description": "",
-        "extensions": {
+        "$type": "string",
+        "$value": "Titillium Web",
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -16,10 +16,10 @@
         }
       },
       "Secondary": {
-        "type": "string",
-        "value": "Roboto Slab",
-        "description": "",
-        "extensions": {
+        "$type": "string",
+        "$value": "Roboto Slab",
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -32,10 +32,10 @@
     },
     "Size": {
       "xs": {
-        "type": "number",
-        "value": 12,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 12,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -46,10 +46,10 @@
         }
       },
       "s": {
-        "type": "number",
-        "value": 14,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 14,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -60,10 +60,10 @@
         }
       },
       "m": {
-        "type": "number",
-        "value": 16,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 16,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -74,10 +74,10 @@
         }
       },
       "l": {
-        "type": "number",
-        "value": 18,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 18,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -88,10 +88,10 @@
         }
       },
       "xl": {
-        "type": "number",
-        "value": 20,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 20,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -102,10 +102,10 @@
         }
       },
       "2xl": {
-        "type": "number",
-        "value": 20,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 20,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -116,10 +116,10 @@
         }
       },
       "3xl": {
-        "type": "number",
-        "value": 24,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 24,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -130,10 +130,10 @@
         }
       },
       "4xl": {
-        "type": "number",
-        "value": 24,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 24,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -144,10 +144,10 @@
         }
       },
       "5xl": {
-        "type": "number",
-        "value": 35,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 35,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -160,10 +160,10 @@
     },
     "Line Height": {
       "xs": {
-        "type": "number",
-        "value": 18,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 18,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -174,10 +174,10 @@
         }
       },
       "s": {
-        "type": "number",
-        "value": 21,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 21,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -188,10 +188,10 @@
         }
       },
       "m": {
-        "type": "number",
-        "value": 24,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 24,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -202,10 +202,10 @@
         }
       },
       "l": {
-        "type": "number",
-        "value": 27,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 27,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -216,10 +216,10 @@
         }
       },
       "xl": {
-        "type": "number",
-        "value": 30,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 30,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -230,10 +230,10 @@
         }
       },
       "2xl": {
-        "type": "number",
-        "value": 30,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 30,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -244,10 +244,10 @@
         }
       },
       "3xl": {
-        "type": "number",
-        "value": 36,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 36,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -258,10 +258,10 @@
         }
       },
       "4xl": {
-        "type": "number",
-        "value": 36,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 36,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -272,10 +272,10 @@
         }
       },
       "5xl": {
-        "type": "number",
-        "value": 48,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 48,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -288,10 +288,10 @@
     },
     "Weight": {
       "Normal": {
-        "type": "number",
-        "value": 400,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 400,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -302,10 +302,10 @@
         }
       },
       "Medium": {
-        "type": "number",
-        "value": 500,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 500,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -316,10 +316,10 @@
         }
       },
       "Semi-Bold": {
-        "type": "number",
-        "value": 600,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 600,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [
@@ -330,10 +330,10 @@
         }
       },
       "Bold": {
-        "type": "number",
-        "value": 700,
-        "description": "",
-        "extensions": {
+        "$type": "number",
+        "$value": 700,
+        "$description": "",
+        "$extensions": {
           "com.figma": {
             "hiddenFromPublishing": false,
             "scopes": [

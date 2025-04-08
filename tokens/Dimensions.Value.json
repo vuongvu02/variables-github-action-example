@@ -1,10 +1,10 @@
 {
   "Sizing": {
     "1": {
-      "type": "number",
-      "value": "{Size.1}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.1}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -16,10 +16,10 @@
       }
     },
     "2": {
-      "type": "number",
-      "value": "{Size.2}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.2}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -31,10 +31,10 @@
       }
     },
     "4": {
-      "type": "number",
-      "value": "{Size.4}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.4}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -46,10 +46,10 @@
       }
     },
     "8": {
-      "type": "number",
-      "value": "{Size.8}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.8}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -61,10 +61,10 @@
       }
     },
     "16": {
-      "type": "number",
-      "value": "{Size.16}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.16}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -76,10 +76,10 @@
       }
     },
     "24": {
-      "type": "number",
-      "value": "{Size.24}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.24}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -91,10 +91,10 @@
       }
     },
     "32": {
-      "type": "number",
-      "value": "{Size.32}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.32}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -106,10 +106,10 @@
       }
     },
     "40": {
-      "type": "number",
-      "value": "{Size.40}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.40}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -121,10 +121,10 @@
       }
     },
     "48": {
-      "type": "number",
-      "value": "{Size.48}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.48}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -136,10 +136,10 @@
       }
     },
     "64": {
-      "type": "number",
-      "value": "{Size.64}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.64}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -153,10 +153,10 @@
   },
   "Spacing": {
     "0": {
-      "type": "number",
-      "value": "{Size.0}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.0}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -167,10 +167,10 @@
       }
     },
     "2": {
-      "type": "number",
-      "value": "{Size.2}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.2}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -181,10 +181,10 @@
       }
     },
     "4": {
-      "type": "number",
-      "value": "{Size.4}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.4}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -195,10 +195,10 @@
       }
     },
     "8": {
-      "type": "number",
-      "value": "{Size.8}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.8}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -209,10 +209,10 @@
       }
     },
     "16": {
-      "type": "number",
-      "value": "{Size.16}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.16}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -223,10 +223,10 @@
       }
     },
     "24": {
-      "type": "number",
-      "value": "{Size.24}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.24}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -237,10 +237,10 @@
       }
     },
     "32": {
-      "type": "number",
-      "value": "{Size.32}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.32}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -251,10 +251,10 @@
       }
     },
     "40": {
-      "type": "number",
-      "value": "{Size.40}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.40}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -265,10 +265,10 @@
       }
     },
     "48": {
-      "type": "number",
-      "value": "{Size.48}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.48}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -279,10 +279,10 @@
       }
     },
     "64": {
-      "type": "number",
-      "value": "{Size.64}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.64}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -293,10 +293,10 @@
       }
     },
     "96": {
-      "type": "number",
-      "value": "{Size.96}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.96}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -307,10 +307,10 @@
       }
     },
     "128": {
-      "type": "number",
-      "value": "{Size.128}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.128}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -321,10 +321,10 @@
       }
     },
     "160": {
-      "type": "number",
-      "value": "{Size.160}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.160}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -337,10 +337,10 @@
   },
   "Radius": {
     "None": {
-      "type": "number",
-      "value": "{Size.0}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.0}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -351,10 +351,10 @@
       }
     },
     "Small": {
-      "type": "number",
-      "value": "{Size.4}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.4}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -365,10 +365,10 @@
       }
     },
     "Medium": {
-      "type": "number",
-      "value": "{Size.8}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.8}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
@@ -379,10 +379,10 @@
       }
     },
     "Large": {
-      "type": "number",
-      "value": "{Size.16}",
-      "description": "",
-      "extensions": {
+      "$type": "number",
+      "$value": "{Size.16}",
+      "$description": "",
+      "$extensions": {
         "com.figma": {
           "hiddenFromPublishing": false,
           "scopes": [
