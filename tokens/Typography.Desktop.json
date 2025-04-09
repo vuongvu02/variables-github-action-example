@@ -2,7 +2,7 @@
   "Font": {
     "Family": {
       "Primary": {
-        "$type": "content",
+        "$type": "string",
         "$value": "Titillium Web",
         "$description": "",
         "$extensions": {
@@ -11,12 +11,13 @@
             "scopes": [
               "FONT_FAMILY"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
       "Secondary": {
-        "$type": "content",
+        "$type": "string",
         "$value": "Roboto Slab",
         "$description": "",
         "$extensions": {
@@ -25,7 +26,8 @@
             "scopes": [
               "FONT_FAMILY"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       }
@@ -41,7 +43,8 @@
             "scopes": [
               "FONT_SIZE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -55,7 +58,8 @@
             "scopes": [
               "FONT_SIZE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -69,7 +73,8 @@
             "scopes": [
               "FONT_SIZE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -83,7 +88,8 @@
             "scopes": [
               "FONT_SIZE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -97,7 +103,8 @@
             "scopes": [
               "FONT_SIZE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -111,7 +118,8 @@
             "scopes": [
               "FONT_SIZE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -125,7 +133,8 @@
             "scopes": [
               "FONT_SIZE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -139,7 +148,8 @@
             "scopes": [
               "FONT_SIZE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -153,7 +163,8 @@
             "scopes": [
               "FONT_SIZE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       }
@@ -169,7 +180,8 @@
             "scopes": [
               "LINE_HEIGHT"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -183,7 +195,8 @@
             "scopes": [
               "LINE_HEIGHT"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -197,7 +210,8 @@
             "scopes": [
               "LINE_HEIGHT"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -211,7 +225,8 @@
             "scopes": [
               "LINE_HEIGHT"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -225,7 +240,8 @@
             "scopes": [
               "LINE_HEIGHT"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -239,7 +255,8 @@
             "scopes": [
               "LINE_HEIGHT"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -253,7 +270,8 @@
             "scopes": [
               "LINE_HEIGHT"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -267,7 +285,8 @@
             "scopes": [
               "LINE_HEIGHT"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -281,7 +300,8 @@
             "scopes": [
               "LINE_HEIGHT"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       }
@@ -297,7 +317,8 @@
             "scopes": [
               "FONT_STYLE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -311,7 +332,8 @@
             "scopes": [
               "FONT_STYLE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -325,7 +347,8 @@
             "scopes": [
               "FONT_STYLE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       },
@@ -339,7 +362,8 @@
             "scopes": [
               "FONT_STYLE"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Desktop"
           }
         }
       }

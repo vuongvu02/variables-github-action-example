@@ -10,7 +10,8 @@
           "scopes": [
             "ALL_SCOPES"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -26,7 +27,8 @@
           ],
           "codeSyntax": {
             "WEB": "Color/Background"
-          }
+          },
+          "mode": "Light"
         }
       }
     },
@@ -40,7 +42,8 @@
           "scopes": [
             "ALL_SCOPES"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -54,7 +57,8 @@
           "scopes": [
             "ALL_SCOPES"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -68,7 +72,8 @@
           "scopes": [
             "ALL_SCOPES"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -82,21 +87,8 @@
           "scopes": [
             "ALL_SCOPES"
           ],
-          "codeSyntax": {}
-        }
-      }
-    },
-    "Divider": {
-      "$type": "color",
-      "$value": "{Color.Neutral.200}",
-      "$description": "",
-      "$extensions": {
-        "com.figma": {
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_COLOR"
-          ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -113,7 +105,8 @@
               "SHAPE_FILL",
               "TEXT_FILL"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -129,7 +122,8 @@
               "SHAPE_FILL",
               "TEXT_FILL"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -143,7 +137,8 @@
             "scopes": [
               "ALL_SCOPES"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -157,8 +152,24 @@
             "scopes": [
               "ALL_SCOPES"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
+        }
+      }
+    },
+    "Divider": {
+      "$type": "color",
+      "$value": "{Color.Neutral.200}",
+      "$description": "",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "STROKE_COLOR"
+          ],
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -172,7 +183,8 @@
           "scopes": [
             "ALL_SCOPES"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -189,7 +201,8 @@
               "TEXT_FILL",
               "STROKE_COLOR"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -205,7 +218,8 @@
               "TEXT_FILL",
               "STROKE_COLOR"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -221,7 +235,8 @@
               "TEXT_FILL",
               "STROKE_COLOR"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -237,7 +252,8 @@
               "TEXT_FILL",
               "STROKE_COLOR"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -253,7 +269,8 @@
               "TEXT_FILL",
               "STROKE_COLOR"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -269,7 +286,8 @@
               "TEXT_FILL",
               "STROKE_COLOR"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       }
@@ -287,7 +305,8 @@
               "SHAPE_FILL",
               "STROKE_COLOR"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         },
         "Hover": {
@@ -302,7 +321,8 @@
                 "SHAPE_FILL",
                 "STROKE_COLOR"
               ],
-              "codeSyntax": {}
+              "codeSyntax": {},
+              "mode": "Light"
             }
           }
         },
@@ -317,7 +337,8 @@
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ],
-              "codeSyntax": {}
+              "codeSyntax": {},
+              "mode": "Light"
             }
           }
         }
@@ -333,7 +354,8 @@
               "FRAME_FILL",
               "SHAPE_FILL"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -348,7 +370,8 @@
               "FRAME_FILL",
               "SHAPE_FILL"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -362,7 +385,8 @@
             "scopes": [
               "TEXT_FILL"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -377,7 +401,8 @@
               "scopes": [
                 "STROKE_COLOR"
               ],
-              "codeSyntax": {}
+              "codeSyntax": {},
+              "mode": "Light"
             }
           }
         },
@@ -391,7 +416,8 @@
               "scopes": [
                 "STROKE_COLOR"
               ],
-              "codeSyntax": {}
+              "codeSyntax": {},
+              "mode": "Light"
             }
           }
         },
@@ -404,7 +430,8 @@
             "scopes": [
               "STROKE_COLOR"
             ],
-            "codeSyntax": {}
+            "codeSyntax": {},
+            "mode": "Light"
           }
         }
       },
@@ -419,7 +446,8 @@
               "scopes": [
                 "STROKE_COLOR"
               ],
-              "codeSyntax": {}
+              "codeSyntax": {},
+              "mode": "Light"
             }
           }
         },
@@ -433,7 +461,8 @@
               "scopes": [
                 "STROKE_COLOR"
               ],
-              "codeSyntax": {}
+              "codeSyntax": {},
+              "mode": "Light"
             }
           }
         }
@@ -452,7 +481,8 @@
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ],
-              "codeSyntax": {}
+              "codeSyntax": {},
+              "mode": "Light"
             }
           }
         },
@@ -466,7 +496,8 @@
               "scopes": [
                 "STROKE_COLOR"
               ],
-              "codeSyntax": {}
+              "codeSyntax": {},
+              "mode": "Light"
             }
           }
         }
@@ -483,7 +514,8 @@
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ],
-              "codeSyntax": {}
+              "codeSyntax": {},
+              "mode": "Light"
             }
           }
         },
@@ -497,7 +529,8 @@
               "scopes": [
                 "STROKE_COLOR"
               ],
-              "codeSyntax": {}
+              "codeSyntax": {},
+              "mode": "Light"
             }
           }
         }
@@ -515,7 +548,8 @@
           "scopes": [
             "STROKE_COLOR"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -529,7 +563,8 @@
           "scopes": [
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -543,7 +578,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     }
@@ -560,7 +596,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -575,7 +612,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -590,7 +628,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -605,7 +644,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -620,7 +660,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -635,7 +676,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -650,7 +692,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -665,7 +708,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     }
@@ -681,7 +725,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -695,7 +740,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -709,7 +755,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -723,7 +770,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -737,7 +785,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     },
@@ -751,7 +800,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     }
@@ -767,7 +817,8 @@
           "scopes": [
             "CORNER_RADIUS"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Light"
         }
       }
     }

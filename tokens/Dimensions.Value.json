@@ -11,7 +11,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -26,7 +27,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -41,7 +43,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -56,7 +59,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -71,7 +75,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -86,7 +91,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -101,7 +107,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -116,7 +123,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -131,7 +139,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -146,7 +155,8 @@
             "WIDTH_HEIGHT",
             "STROKE_FLOAT"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     }
@@ -162,7 +172,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -176,7 +187,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -190,7 +202,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -204,7 +217,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -218,7 +232,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -232,7 +247,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -246,7 +262,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -260,7 +277,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -274,7 +292,8 @@
           "scopes": [
             "ALL_SCOPES"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -288,7 +307,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -302,7 +322,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -316,7 +337,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -330,7 +352,8 @@
           "scopes": [
             "GAP"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     }
@@ -346,7 +369,8 @@
           "scopes": [
             "CORNER_RADIUS"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -360,7 +384,8 @@
           "scopes": [
             "CORNER_RADIUS"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -374,7 +399,8 @@
           "scopes": [
             "CORNER_RADIUS"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     },
@@ -388,7 +414,8 @@
           "scopes": [
             "CORNER_RADIUS"
           ],
-          "codeSyntax": {}
+          "codeSyntax": {},
+          "mode": "Value"
         }
       }
     }

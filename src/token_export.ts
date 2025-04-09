@@ -1,8 +1,8 @@
 import { GetLocalVariablesResponse, LocalVariable } from '@figma/rest-api-spec';
 import { rgbToHex } from './color.js';
-import { Token, TokensFile } from './token_types.js';
+import { Token, TokensFile, StyleDictionaryType } from './token_types.js';
 
-function tokenTypeFromVariable(variable: LocalVariable) {
+function tokenTypeFromVariable(variable: LocalVariable): StyleDictionaryType {
   // console.log(variable)
   switch (variable.resolvedType) {
     case 'COLOR':
@@ -10,11 +10,9 @@ function tokenTypeFromVariable(variable: LocalVariable) {
     case 'FLOAT':
       return 'dimension';
     case 'STRING':
-      return 'content';
+      return 'string';
     case 'BOOLEAN':
-      return 'state';
-    default:
-      return 'other';
+      return 'boolean';
   }
 }
 
@@ -31,7 +29,6 @@ function tokenValueFromVariable(
 
   if ('type' in value && value.type === 'VARIABLE_ALIAS') {
     const aliasedVariable = localVariables[value.id];
-    console.log({ aliasedVariable });
     return `{${aliasedVariable.name.replace(/\//g, '.')}}`;
   }
 
@@ -78,6 +75,7 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
             hiddenFromPublishing: variable.hiddenFromPublishing,
             scopes: variable.scopes,
             codeSyntax: variable.codeSyntax,
+            mode: mode.name,
           },
         },
       };

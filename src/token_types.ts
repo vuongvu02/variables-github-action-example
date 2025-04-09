@@ -12,7 +12,7 @@ export interface Token {
   /**
    * The [type](https://tr.designtokens.org/format/#type-0) of the token.
    */
-  $type: 'color' | 'number' | 'string' | 'boolean' | 'dimension' | 'content' | 'state' | 'other';
+  $type: StyleDictionaryType;
   $value: string | number | boolean;
   $description?: string;
   $extensions?: {
@@ -23,6 +23,7 @@ export interface Token {
       hiddenFromPublishing?: boolean;
       scopes?: VariableScope[];
       codeSyntax?: VariableCodeSyntax;
+      mode?: string;
     };
   };
 }
@@ -50,3 +51,34 @@ export type TokenOrTokenGroup =
 export type TokensFile = {
   [key: string]: TokenOrTokenGroup;
 };
+
+export type StyleDictionaryType =
+  | 'color'
+  | 'dimension'
+  | 'fontFamily'
+  | 'fontWeight'
+  | 'fontSize'
+  | 'lineHeight'
+  | 'letterSpacing'
+  | 'paragraphSpacing'
+  | 'borderRadius'
+  | 'borderWidth'
+  | 'opacity'
+  | 'boxShadow'
+  | 'textShadow'
+  | 'duration'
+  | 'cubicBezier'
+  | 'fontStyle'
+  | 'textDecoration'
+  | 'textCase'
+  | 'composition'
+  | 'strokeStyle'
+  | 'border'
+  | 'transition'
+  | 'gradient'
+  | 'asset'
+  | 'string'
+  | 'number'
+  | 'boolean'
+  | 'object'
+  | 'array';
