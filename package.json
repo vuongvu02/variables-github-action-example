@@ -7,7 +7,6 @@
     "sync-tokens": "pnpm clean &&  tsx src/sync_figma_to_tokens.ts",
     "test": "jest",
     "build": "tsx src/build.ts",
-    "build2": "style-dictionary build",
     "clean": "rm -f tokens/*.json; rm -rf build/;"
   },
   "devDependencies": {
