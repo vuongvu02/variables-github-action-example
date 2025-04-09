@@ -1,16 +1,16 @@
-import axios from 'axios'
+import axios from 'axios';
 import {
   GetLocalVariablesResponse,
   PostVariablesRequestBody,
   PostVariablesResponse,
-} from '@figma/rest-api-spec'
+} from '@figma/rest-api-spec';
 
 export default class FigmaApi {
-  private baseUrl = 'https://api.figma.com'
-  private token: string
+  private baseUrl = 'https://api.figma.com';
+  private token: string;
 
   constructor(token: string) {
-    this.token = token
+    this.token = token;
   }
 
   async getLocalVariables(fileKey: string) {
@@ -20,9 +20,9 @@ export default class FigmaApi {
         Accept: '*/*',
         'X-Figma-Token': this.token,
       },
-    })
+    });
 
-    return resp.data
+    return resp.data;
   }
 
   async postVariables(fileKey: string, payload: PostVariablesRequestBody) {
@@ -34,8 +34,8 @@ export default class FigmaApi {
         'X-Figma-Token': this.token,
       },
       data: payload,
-    })
+    });
 
-    return resp.data
+    return resp.data;
   }
 }

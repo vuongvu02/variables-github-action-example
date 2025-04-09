@@ -308,6 +308,20 @@
             "codeSyntax": {}
           }
         }
+      },
+      "999": {
+        "$type": "color",
+        "$value": "#f12321",
+        "$description": "this is a test token",
+        "$extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
       }
     },
     "Red": {

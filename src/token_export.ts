@@ -1,20 +1,20 @@
-import { GetLocalVariablesResponse, LocalVariable } from '@figma/rest-api-spec'
-import { rgbToHex } from './color.js'
-import { Token, TokensFile } from './token_types.js'
+import { GetLocalVariablesResponse, LocalVariable } from '@figma/rest-api-spec';
+import { rgbToHex } from './color.js';
+import { Token, TokensFile } from './token_types.js';
 
 function tokenTypeFromVariable(variable: LocalVariable) {
-  console.log(variable)
+  // console.log(variable)
   switch (variable.resolvedType) {
     case 'COLOR':
-      return 'color'
+      return 'color';
     case 'FLOAT':
-      return 'dimension'
+      return 'dimension';
     case 'STRING':
-      return 'content'
+      return 'content';
     case 'BOOLEAN':
-      return 'state'
+      return 'state';
     default:
-      return 'other'
+      return 'other';
   }
 }
 
@@ -23,50 +23,51 @@ function tokenValueFromVariable(
   modeId: string,
   localVariables: { [id: string]: LocalVariable },
 ) {
-  const value = variable.valuesByMode[modeId]
+  const value = variable.valuesByMode[modeId];
 
   if (typeof value !== 'object') {
-    return value
+    return value;
   }
 
   if ('type' in value && value.type === 'VARIABLE_ALIAS') {
-    const aliasedVariable = localVariables[value.id]
-    return `{${aliasedVariable.name.replace(/\//g, '.')}}`
+    const aliasedVariable = localVariables[value.id];
+    console.log({ aliasedVariable });
+    return `{${aliasedVariable.name.replace(/\//g, '.')}}`;
   }
 
   if ('r' in value) {
-    return rgbToHex(value)
+    return rgbToHex(value);
   }
 
-  throw new Error(`Invalid variable value format: ${JSON.stringify(value)}`)
+  throw new Error(`Invalid variable value format: ${JSON.stringify(value)}`);
 }
 
 export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVariablesResponse) {
-  const tokenFiles: { [fileName: string]: TokensFile } = {}
-  const localVariableCollections = localVariablesResponse.meta.variableCollections
-  const localVariables = localVariablesResponse.meta.variables
+  const tokenFiles: { [fileName: string]: TokensFile } = {};
+  const localVariableCollections = localVariablesResponse.meta.variableCollections;
+  const localVariables = localVariablesResponse.meta.variables;
 
   Object.values(localVariables).forEach((variable) => {
     // Skip remote variables because we only want to generate tokens for local variables
     if (variable.remote) {
-      return
+      return;
     }
 
-    const collection = localVariableCollections[variable.variableCollectionId]
+    const collection = localVariableCollections[variable.variableCollectionId];
 
     collection.modes.forEach((mode) => {
-      const fileName = `${collection.name}.${mode.name}.json`
+      const fileName = `${collection.name}.${mode.name}.json`;
 
       if (!tokenFiles[fileName]) {
-        tokenFiles[fileName] = {}
+        tokenFiles[fileName] = {};
       }
 
-      let obj: any = tokenFiles[fileName]
+      let obj: any = tokenFiles[fileName];
 
       variable.name.split('/').forEach((groupName) => {
-        obj[groupName] = obj[groupName] || {}
-        obj = obj[groupName]
-      })
+        obj[groupName] = obj[groupName] || {};
+        obj = obj[groupName];
+      });
 
       const token: Token = {
         $type: tokenTypeFromVariable(variable),
@@ -79,11 +80,11 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
             codeSyntax: variable.codeSyntax,
           },
         },
-      }
+      };
 
-      Object.assign(obj, token)
-    })
-  })
+      Object.assign(obj, token);
+    });
+  });
 
-  return tokenFiles
+  return tokenFiles;
 }

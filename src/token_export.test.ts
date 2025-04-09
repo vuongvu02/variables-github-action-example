@@ -1,5 +1,5 @@
-import { GetLocalVariablesResponse } from '@figma/rest-api-spec'
-import { tokenFilesFromLocalVariables } from './token_export.js'
+import { GetLocalVariablesResponse } from '@figma/rest-api-spec';
+import { tokenFilesFromLocalVariables } from './token_export.js';
 
 describe('tokenFilesFromLocalVariables', () => {
   it('ignores remote variables', () => {
@@ -37,11 +37,11 @@ describe('tokenFilesFromLocalVariables', () => {
           },
         },
       },
-    }
+    };
 
-    const tokenFiles = tokenFilesFromLocalVariables(localVariablesResponse)
-    expect(tokenFiles).toEqual({})
-  })
+    const tokenFiles = tokenFilesFromLocalVariables(localVariablesResponse);
+    expect(tokenFiles).toEqual({});
+  });
 
   it('returns token files', () => {
     const localVariablesResponse: GetLocalVariablesResponse = {
@@ -130,9 +130,9 @@ describe('tokenFilesFromLocalVariables', () => {
           },
         },
       },
-    }
+    };
 
-    const tokenFiles = tokenFilesFromLocalVariables(localVariablesResponse)
+    const tokenFiles = tokenFilesFromLocalVariables(localVariablesResponse);
 
     expect(tokenFiles['primitives.mode1.json']).toEqual({
       spacing: {
@@ -189,7 +189,7 @@ describe('tokenFilesFromLocalVariables', () => {
           },
         },
       },
-    })
+    });
 
     expect(tokenFiles['primitives.mode2.json']).toEqual({
       spacing: {
@@ -246,8 +246,8 @@ describe('tokenFilesFromLocalVariables', () => {
           },
         },
       },
-    })
-  })
+    });
+  });
 
   it('handles aliases', () => {
     const localVariablesResponse: GetLocalVariablesResponse = {
@@ -302,9 +302,9 @@ describe('tokenFilesFromLocalVariables', () => {
           },
         },
       },
-    }
+    };
 
-    const tokenFiles = tokenFilesFromLocalVariables(localVariablesResponse)
+    const tokenFiles = tokenFilesFromLocalVariables(localVariablesResponse);
 
     expect(tokenFiles['collection1.mode1.json']).toEqual({
       var1: {
@@ -331,6 +331,6 @@ describe('tokenFilesFromLocalVariables', () => {
           },
         },
       },
-    })
-  })
-})
+    });
+  });
+});

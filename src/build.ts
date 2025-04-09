@@ -1,4 +1,4 @@
-import StyleDictionary from 'style-dictionary'
+import StyleDictionary from 'style-dictionary';
 
 async function run() {
   const sd = new StyleDictionary({
@@ -48,10 +48,10 @@ async function run() {
         ],
       },
     },
-  })
+  });
 
-  await sd.cleanAllPlatforms()
-  await sd.buildAllPlatforms()
+  await sd.cleanAllPlatforms();
+  await sd.buildAllPlatforms();
 }
 
-run()
+run();

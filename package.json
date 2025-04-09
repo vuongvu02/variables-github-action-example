@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "prettier:check": "prettier --check src/",
+    "prettier:fix": "prettier --write src/",
     "sync-tokens": "pnpm clean &&  tsx src/sync_figma_to_tokens.ts",
     "test": "jest",
     "build": "tsx src/build.ts",

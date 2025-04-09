@@ -6,35 +6,32 @@
  * one for each mode.
  */
 
-import { VariableCodeSyntax, VariableScope } from '@figma/rest-api-spec'
+import { VariableCodeSyntax, VariableScope } from '@figma/rest-api-spec';
 
 export interface Token {
   /**
    * The [type](https://tr.designtokens.org/format/#type-0) of the token.
-   *
-   * We allow `string` and `boolean` types in addition to the draft W3C spec's `color` and `number` types
-   * to align with the resolved types for Figma variables.
    */
-  $type: 'color' | 'number' | 'string' | 'boolean' | 'dimension' | 'content' | 'state' | 'other'
-  $value: string | number | boolean
-  $description?: string
+  $type: 'color' | 'number' | 'string' | 'boolean' | 'dimension' | 'content' | 'state' | 'other';
+  $value: string | number | boolean;
+  $description?: string;
   $extensions?: {
     /**
      * The `com.figma` namespace stores Figma-specific variable properties
      */
     'com.figma'?: {
-      hiddenFromPublishing?: boolean
-      scopes?: VariableScope[]
-      codeSyntax?: VariableCodeSyntax
-    }
-  }
+      hiddenFromPublishing?: boolean;
+      scopes?: VariableScope[];
+      codeSyntax?: VariableCodeSyntax;
+    };
+  };
 }
 
 export type TokenOrTokenGroup =
   | Token
   | ({
-      [tokenName: string]: Token
-    } & { $type?: never; $value?: never })
+      [tokenName: string]: Token;
+    } & { $type?: never; $value?: never });
 
 /**
  * Defines what we expect a Design Tokens file to look like in the codebase.
@@ -51,5 +48,5 @@ export type TokenOrTokenGroup =
  * Follow this discussion for updates: https://github.com/design-tokens/community-group/issues/210
  */
 export type TokensFile = {
-  [key: string]: TokenOrTokenGroup
-}
+  [key: string]: TokenOrTokenGroup;
+};
