@@ -15,7 +15,7 @@ export interface Token {
    * We allow `string` and `boolean` types in addition to the draft W3C spec's `color` and `number` types
    * to align with the resolved types for Figma variables.
    */
-  $type: 'color' | 'number' | 'string' | 'boolean'
+  $type: 'color' | 'number' | 'string' | 'boolean' | 'dimension' | 'content' | 'state' | 'other'
   $value: string | number | boolean
   $description?: string
   $extensions?: {

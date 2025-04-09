@@ -133,7 +133,7 @@
       },
       "Width": {
         "Primary": {
-          "$type": "number",
+          "$type": "dimension",
           "$value": "{Sizing.2}",
           "$description": "",
           "$extensions": {
@@ -145,7 +145,7 @@
           }
         },
         "Secondary": {
-          "$type": "number",
+          "$type": "dimension",
           "$value": "{Sizing.2}",
           "$description": "",
           "$extensions": {
@@ -157,7 +157,7 @@
           }
         },
         "Tertiary": {
-          "$type": "number",
+          "$type": "dimension",
           "$value": "{Sizing.1}",
           "$description": "",
           "$extensions": {
@@ -170,7 +170,7 @@
         }
       },
       "Offset": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": "{Sizing.4}",
         "$description": "",
         "$extensions": {

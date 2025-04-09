@@ -7,17 +7,22 @@ async function run() {
       css: {
         // "prefix": "bls-"
         transformGroup: 'css',
+        transforms: ['size/px'],
         buildPath: 'build/css/',
         files: [
           {
             destination: 'variables.css',
             format: 'css/variables',
+            // options: {
+            //   outputReferences: true,
+            // },
           },
         ],
       },
       scss: {
         // "prefix": "bls-"
         transformGroup: 'scss',
+        transforms: ['size/px'],
         buildPath: 'build/scss/',
         files: [
           {

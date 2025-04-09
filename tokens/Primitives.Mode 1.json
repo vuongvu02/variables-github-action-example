@@ -447,7 +447,7 @@
   },
   "Size": {
     "0": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 0,
       "$description": "",
       "$extensions": {
@@ -459,7 +459,7 @@
       }
     },
     "1": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 1,
       "$description": "",
       "$extensions": {
@@ -471,7 +471,7 @@
       }
     },
     "2": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 2,
       "$description": "",
       "$extensions": {
@@ -483,7 +483,7 @@
       }
     },
     "4": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 4,
       "$description": "",
       "$extensions": {
@@ -495,7 +495,7 @@
       }
     },
     "8": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 8,
       "$description": "",
       "$extensions": {
@@ -507,7 +507,7 @@
       }
     },
     "12": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 12,
       "$description": "",
       "$extensions": {
@@ -519,7 +519,7 @@
       }
     },
     "16": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 16,
       "$description": "",
       "$extensions": {
@@ -531,7 +531,7 @@
       }
     },
     "20": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 20,
       "$description": "",
       "$extensions": {
@@ -543,7 +543,7 @@
       }
     },
     "24": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 24,
       "$description": "",
       "$extensions": {
@@ -555,7 +555,7 @@
       }
     },
     "32": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 32,
       "$description": "",
       "$extensions": {
@@ -567,7 +567,7 @@
       }
     },
     "40": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 40,
       "$description": "",
       "$extensions": {
@@ -579,7 +579,7 @@
       }
     },
     "48": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 48,
       "$description": "",
       "$extensions": {
@@ -591,7 +591,7 @@
       }
     },
     "64": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 64,
       "$description": "",
       "$extensions": {
@@ -603,7 +603,7 @@
       }
     },
     "80": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 80,
       "$description": "",
       "$extensions": {
@@ -615,7 +615,7 @@
       }
     },
     "96": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 96,
       "$description": "",
       "$extensions": {
@@ -627,7 +627,7 @@
       }
     },
     "112": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 112,
       "$description": "",
       "$extensions": {
@@ -639,7 +639,7 @@
       }
     },
     "128": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 128,
       "$description": "",
       "$extensions": {
@@ -651,7 +651,7 @@
       }
     },
     "160": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": 160,
       "$description": "",
       "$extensions": {

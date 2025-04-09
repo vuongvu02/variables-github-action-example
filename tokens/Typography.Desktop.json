@@ -2,7 +2,7 @@
   "Font": {
     "Family": {
       "Primary": {
-        "$type": "string",
+        "$type": "content",
         "$value": "Titillium Web",
         "$description": "",
         "$extensions": {
@@ -16,7 +16,7 @@
         }
       },
       "Secondary": {
-        "$type": "string",
+        "$type": "content",
         "$value": "Roboto Slab",
         "$description": "",
         "$extensions": {
@@ -32,7 +32,7 @@
     },
     "Size": {
       "xs": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 12,
         "$description": "",
         "$extensions": {
@@ -46,7 +46,7 @@
         }
       },
       "s": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 14,
         "$description": "",
         "$extensions": {
@@ -60,7 +60,7 @@
         }
       },
       "m": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 16,
         "$description": "",
         "$extensions": {
@@ -74,7 +74,7 @@
         }
       },
       "l": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 18,
         "$description": "",
         "$extensions": {
@@ -88,7 +88,7 @@
         }
       },
       "xl": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 20,
         "$description": "",
         "$extensions": {
@@ -102,7 +102,7 @@
         }
       },
       "2xl": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 24,
         "$description": "",
         "$extensions": {
@@ -116,7 +116,7 @@
         }
       },
       "3xl": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 30,
         "$description": "",
         "$extensions": {
@@ -130,7 +130,7 @@
         }
       },
       "4xl": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 35,
         "$description": "",
         "$extensions": {
@@ -144,7 +144,7 @@
         }
       },
       "5xl": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 45,
         "$description": "",
         "$extensions": {
@@ -160,7 +160,7 @@
     },
     "Line Height": {
       "xs": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 18,
         "$description": "",
         "$extensions": {
@@ -174,7 +174,7 @@
         }
       },
       "s": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 21,
         "$description": "",
         "$extensions": {
@@ -188,7 +188,7 @@
         }
       },
       "m": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 24,
         "$description": "",
         "$extensions": {
@@ -202,7 +202,7 @@
         }
       },
       "l": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 27,
         "$description": "",
         "$extensions": {
@@ -216,7 +216,7 @@
         }
       },
       "xl": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 30,
         "$description": "",
         "$extensions": {
@@ -230,7 +230,7 @@
         }
       },
       "2xl": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 36,
         "$description": "",
         "$extensions": {
@@ -244,7 +244,7 @@
         }
       },
       "3xl": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 45,
         "$description": "",
         "$extensions": {
@@ -258,7 +258,7 @@
         }
       },
       "4xl": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 52.5,
         "$description": "",
         "$extensions": {
@@ -272,7 +272,7 @@
         }
       },
       "5xl": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 60,
         "$description": "",
         "$extensions": {
@@ -288,7 +288,7 @@
     },
     "Weight": {
       "Normal": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 400,
         "$description": "",
         "$extensions": {
@@ -302,7 +302,7 @@
         }
       },
       "Medium": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 500,
         "$description": "",
         "$extensions": {
@@ -316,7 +316,7 @@
         }
       },
       "Semi-Bold": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 600,
         "$description": "",
         "$extensions": {
@@ -330,7 +330,7 @@
         }
       },
       "Bold": {
-        "$type": "number",
+        "$type": "dimension",
         "$value": 700,
         "$description": "",
         "$extensions": {

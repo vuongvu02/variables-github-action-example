@@ -3,15 +3,18 @@ import { rgbToHex } from './color.js'
 import { Token, TokensFile } from './token_types.js'
 
 function tokenTypeFromVariable(variable: LocalVariable) {
+  console.log(variable)
   switch (variable.resolvedType) {
-    case 'BOOLEAN':
-      return 'boolean'
     case 'COLOR':
       return 'color'
     case 'FLOAT':
-      return 'number'
+      return 'dimension'
     case 'STRING':
-      return 'string'
+      return 'content'
+    case 'BOOLEAN':
+      return 'state'
+    default:
+      return 'other'
   }
 }
 

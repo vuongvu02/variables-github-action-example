@@ -1,6 +1,6 @@
 {
   "Icon Size": {
-    "$type": "number",
+    "$type": "dimension",
     "$value": "{Size.32}",
     "$description": "",
     "$extensions": {
@@ -14,7 +14,7 @@
     }
   },
   "Text Input Vertical Padding": {
-    "$type": "number",
+    "$type": "dimension",
     "$value": "{Spacing.8}",
     "$description": "",
     "$extensions": {

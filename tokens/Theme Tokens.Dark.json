@@ -520,7 +520,7 @@
       }
     },
     "Thickness": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Sizing.2}",
       "$description": "",
       "$extensions": {
@@ -534,7 +534,7 @@
       }
     },
     "Offset": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Sizing.4}",
       "$description": "",
       "$extensions": {
@@ -550,7 +550,7 @@
   },
   "Sizing": {
     "1": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.1}",
       "$description": "",
       "$extensions": {
@@ -565,7 +565,7 @@
       }
     },
     "2": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.2}",
       "$description": "",
       "$extensions": {
@@ -580,7 +580,7 @@
       }
     },
     "4": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.4}",
       "$description": "",
       "$extensions": {
@@ -595,7 +595,7 @@
       }
     },
     "24": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.24}",
       "$description": "",
       "$extensions": {
@@ -610,7 +610,7 @@
       }
     },
     "32": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.32}",
       "$description": "",
       "$extensions": {
@@ -625,7 +625,7 @@
       }
     },
     "40": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.40}",
       "$description": "",
       "$extensions": {
@@ -640,7 +640,7 @@
       }
     },
     "48": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.48}",
       "$description": "",
       "$extensions": {
@@ -655,7 +655,7 @@
       }
     },
     "64": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.64}",
       "$description": "",
       "$extensions": {
@@ -672,7 +672,7 @@
   },
   "Spacing": {
     "0": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.0}",
       "$description": "",
       "$extensions": {
@@ -686,7 +686,7 @@
       }
     },
     "2": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.2}",
       "$description": "",
       "$extensions": {
@@ -700,7 +700,7 @@
       }
     },
     "8": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.8}",
       "$description": "",
       "$extensions": {
@@ -714,7 +714,7 @@
       }
     },
     "16": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.16}",
       "$description": "",
       "$extensions": {
@@ -728,7 +728,7 @@
       }
     },
     "24": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.24}",
       "$description": "",
       "$extensions": {
@@ -742,7 +742,7 @@
       }
     },
     "40": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.40}",
       "$description": "",
       "$extensions": {
@@ -758,7 +758,7 @@
   },
   "Radius": {
     "Medium": {
-      "$type": "number",
+      "$type": "dimension",
       "$value": "{Size.8}",
       "$description": "",
       "$extensions": {
