@@ -308,7 +308,7 @@
     },
     "Weight": {
       "Normal": {
-        "$type": "dimension",
+        "$type": "number",
         "$value": 400,
         "$description": "",
         "$extensions": {
@@ -323,7 +323,7 @@
         }
       },
       "Medium": {
-        "$type": "dimension",
+        "$type": "number",
         "$value": 500,
         "$description": "",
         "$extensions": {
@@ -338,7 +338,7 @@
         }
       },
       "Semi-Bold": {
-        "$type": "dimension",
+        "$type": "number",
         "$value": 600,
         "$description": "",
         "$extensions": {
@@ -353,7 +353,7 @@
         }
       },
       "Bold": {
-        "$type": "dimension",
+        "$type": "number",
         "$value": 700,
         "$description": "",
         "$extensions": {

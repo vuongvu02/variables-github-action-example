@@ -7,7 +7,7 @@ async function run() {
       css: {
         // "prefix": "bls-"
         transformGroup: 'css',
-        transforms: ['size/px'],
+        transforms: ['size/pxToRem'],
         buildPath: 'build/css/',
         files: [
           {
@@ -22,7 +22,7 @@ async function run() {
       scss: {
         // "prefix": "bls-"
         transformGroup: 'scss',
-        transforms: ['size/px'],
+        transforms: ['size/pxToRem'],
         buildPath: 'build/scss/',
         files: [
           {
@@ -34,7 +34,7 @@ async function run() {
       ts: {
         // "prefix": "bls-"
         transformGroup: 'js',
-        transforms: ['name/camel'],
+        transforms: ['name/camel', 'size/pxToRem'],
         buildPath: 'build/ts/',
         files: [
           {

@@ -1,7 +1,7 @@
 {
   "Sizing": {
     "1": {
-      "$type": "dimension",
+      "$type": "borderWidth",
       "$value": "{Size.1}",
       "$description": "",
       "$extensions": {
@@ -17,7 +17,7 @@
       }
     },
     "2": {
-      "$type": "dimension",
+      "$type": "borderWidth",
       "$value": "{Size.2}",
       "$description": "",
       "$extensions": {
@@ -33,7 +33,7 @@
       }
     },
     "4": {
-      "$type": "dimension",
+      "$type": "borderWidth",
       "$value": "{Size.4}",
       "$description": "",
       "$extensions": {
@@ -49,7 +49,7 @@
       }
     },
     "8": {
-      "$type": "dimension",
+      "$type": "borderWidth",
       "$value": "{Size.8}",
       "$description": "",
       "$extensions": {
@@ -65,7 +65,7 @@
       }
     },
     "16": {
-      "$type": "dimension",
+      "$type": "borderWidth",
       "$value": "{Size.16}",
       "$description": "",
       "$extensions": {
@@ -81,7 +81,7 @@
       }
     },
     "24": {
-      "$type": "dimension",
+      "$type": "borderWidth",
       "$value": "{Size.24}",
       "$description": "",
       "$extensions": {
@@ -97,7 +97,7 @@
       }
     },
     "32": {
-      "$type": "dimension",
+      "$type": "borderWidth",
       "$value": "{Size.32}",
       "$description": "",
       "$extensions": {
@@ -113,7 +113,7 @@
       }
     },
     "40": {
-      "$type": "dimension",
+      "$type": "borderWidth",
       "$value": "{Size.40}",
       "$description": "",
       "$extensions": {
@@ -129,7 +129,7 @@
       }
     },
     "48": {
-      "$type": "dimension",
+      "$type": "borderWidth",
       "$value": "{Size.48}",
       "$description": "",
       "$extensions": {
@@ -145,7 +145,7 @@
       }
     },
     "64": {
-      "$type": "dimension",
+      "$type": "borderWidth",
       "$value": "{Size.64}",
       "$description": "",
       "$extensions": {
@@ -360,7 +360,7 @@
   },
   "Radius": {
     "None": {
-      "$type": "dimension",
+      "$type": "borderRadius",
       "$value": "{Size.0}",
       "$description": "",
       "$extensions": {
@@ -375,7 +375,7 @@
       }
     },
     "Small": {
-      "$type": "dimension",
+      "$type": "borderRadius",
       "$value": "{Size.4}",
       "$description": "",
       "$extensions": {
@@ -390,7 +390,7 @@
       }
     },
     "Medium": {
-      "$type": "dimension",
+      "$type": "borderRadius",
       "$value": "{Size.8}",
       "$description": "",
       "$extensions": {
@@ -405,7 +405,7 @@
       }
     },
     "Large": {
-      "$type": "dimension",
+      "$type": "borderRadius",
       "$value": "{Size.16}",
       "$description": "",
       "$extensions": {
