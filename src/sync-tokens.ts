@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import * as fs from 'fs';
-import FigmaApi from './figma_api.js';
-import { tokenFilesFromLocalVariables } from './token_export.js';
+import FigmaApi from './figma-api.js';
+import { tokenFilesFromLocalVariables } from './token-export.js';
 
 const OUTPUT_DIR = 'tokens';
 

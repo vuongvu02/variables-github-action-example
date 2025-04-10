@@ -7,7 +7,7 @@
     "clean": "rm -f tokens/*.json",
     "prettier:check": "prettier --check src/",
     "prettier:fix": "prettier --write src/",
-    "sync-tokens": "pnpm clean &&  tsx src/sync_tokens.ts",
+    "sync-tokens": "pnpm clean &&  tsx src/sync-tokens.ts",
     "test": "jest"
   },
   "devDependencies": {
