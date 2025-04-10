@@ -1,4 +1,8 @@
 import StyleDictionary from 'style-dictionary';
+import { transformTypes } from 'style-dictionary/enums';
+import { kebabCase, camelCase } from 'change-case';
+
+const ALLOWED_MODES = ['light', 'dark', 'mobil', 'desktop'];
 
 async function run() {
   const sd = new StyleDictionary({
@@ -7,7 +11,7 @@ async function run() {
       css: {
         // "prefix": "bls-"
         transformGroup: 'css',
-        transforms: ['size/pxToRem'],
+        transforms: ['size/pxToRem', 'name/kebabWithMode'],
         basePxFontSize: 16,
         buildPath: 'build/css/',
         files: [
@@ -23,7 +27,7 @@ async function run() {
       scss: {
         // "prefix": "bls-"
         transformGroup: 'scss',
-        transforms: ['size/pxToRem'],
+        transforms: ['size/pxToRem', 'name/kebabWithMode'],
         basePxFontSize: 16,
         buildPath: 'build/scss/',
         files: [
@@ -36,7 +40,7 @@ async function run() {
       ts: {
         // "prefix": "bls-"
         transformGroup: 'js',
-        transforms: ['name/camel', 'size/pxToRem'],
+        transforms: ['name/camelWithMode', 'size/pxToRem'],
         basePxFontSize: 16,
         buildPath: 'build/ts/',
         files: [
@@ -50,6 +54,39 @@ async function run() {
           },
         ],
       },
+    },
+  });
+
+  sd.registerTransform({
+    name: 'name/kebabWithMode',
+    type: transformTypes.name,
+    filter: function (token) {
+      const tokenMode = String(token.$extensions['com.figma'].mode).toLowerCase();
+      return ALLOWED_MODES.includes(tokenMode);
+    },
+    transform: function (token, config) {
+      const tokenNameWithMode = token.path.concat(token.$extensions['com.figma'].mode);
+      return kebabCase([config.prefix].concat(tokenNameWithMode).join(' '));
+    },
+  });
+
+  sd.registerTransform({
+    name: 'name/camelWithMode',
+    type: transformTypes.name,
+    filter: function (token) {
+      const tokenMode = String(token.$extensions['com.figma'].mode).toLowerCase();
+      return ALLOWED_MODES.includes(tokenMode);
+    },
+    transform: function (token, config) {
+      const tokenNameWithMode = token.path.concat(token.$extensions['com.figma'].mode);
+      const lowerFirst = function (str: string) {
+        return str ? str[0].toLowerCase() + str.slice(1) : '';
+      };
+      return lowerFirst(
+        camelCase([config.prefix].concat(tokenNameWithMode).join(' '), {
+          mergeAmbiguousCharacters: true,
+        }),
+      );
     },
   });
 

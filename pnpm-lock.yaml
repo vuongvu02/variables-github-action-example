@@ -20,6 +20,9 @@ importers:
       axios:
         specifier: ^1.6.0
         version: 1.8.4
+      change-case:
+        specifier: ^5.4.4
+        version: 5.4.4
       dotenv:
         specifier: ^16.3.1
         version: 16.4.7
