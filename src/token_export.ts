@@ -1,6 +1,6 @@
 import { GetLocalVariablesResponse, LocalVariable } from '@figma/rest-api-spec';
 import { rgbToHex } from './color.js';
-import { Token, TokensFile, StyleDictionaryType } from './token_types.js';
+import { Token, TokensFile, StyleDictionaryType } from './types.js';
 
 function tokenTypeFromVariable(variable: LocalVariable): StyleDictionaryType {
   // Base mapping by resolvedType
