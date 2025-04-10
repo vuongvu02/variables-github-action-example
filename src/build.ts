@@ -8,6 +8,7 @@ async function run() {
         // "prefix": "bls-"
         transformGroup: 'css',
         transforms: ['size/pxToRem'],
+        basePxFontSize: 16,
         buildPath: 'build/css/',
         files: [
           {
@@ -23,6 +24,7 @@ async function run() {
         // "prefix": "bls-"
         transformGroup: 'scss',
         transforms: ['size/pxToRem'],
+        basePxFontSize: 16,
         buildPath: 'build/scss/',
         files: [
           {
@@ -35,6 +37,7 @@ async function run() {
         // "prefix": "bls-"
         transformGroup: 'js',
         transforms: ['name/camel', 'size/pxToRem'],
+        basePxFontSize: 16,
         buildPath: 'build/ts/',
         files: [
           {
