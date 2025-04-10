@@ -3,12 +3,12 @@
   "name": "variables-github-action-example",
   "type": "module",
   "scripts": {
+    "build": "tsx src/build.ts",
+    "clean": "rm -f tokens/*.json",
     "prettier:check": "prettier --check src/",
     "prettier:fix": "prettier --write src/",
     "sync-tokens": "pnpm clean &&  tsx src/sync_tokens.ts",
-    "test": "jest",
-    "build": "tsx src/build.ts",
-    "clean": "rm -f tokens/*.json; rm -rf build/;"
+    "test": "jest"
   },
   "devDependencies": {
     "@figma/rest-api-spec": "^0.10.0",
