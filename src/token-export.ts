@@ -8,33 +8,31 @@ function tokenTypeFromVariable(variable: LocalVariable): StyleDictionaryType {
     case 'COLOR':
       return 'color';
     case 'FLOAT': {
-      // For FLOAT type, check scopes to determine more specific types
-      if (variable.scopes && variable.scopes.length > 0) {
-        // If only one scope is defined (excluding ALL_SCOPES), we can be more specific
-        if (variable.scopes.includes('OPACITY')) {
+      const tokenScopes = variable.scopes || [];
+      if (tokenScopes.length > 0) {
+        if (tokenScopes.includes('OPACITY')) {
           return 'opacity';
         }
-        if (variable.scopes.includes('CORNER_RADIUS')) {
+        if (tokenScopes.includes('CORNER_RADIUS')) {
           return 'borderRadius';
         }
-        if (variable.scopes.includes('STROKE_FLOAT')) {
+        if (tokenScopes.includes('STROKE_FLOAT')) {
           return 'borderWidth';
         }
-        if (variable.scopes.includes('WIDTH_HEIGHT')) {
+        if (tokenScopes.includes('WIDTH_HEIGHT')) {
           return 'dimension';
         }
-        if (variable.scopes.includes('GAP')) {
+        if (tokenScopes.includes('GAP')) {
           return 'dimension';
         }
-        if (variable.scopes.includes('TEXT_CONTENT')) {
+        if (tokenScopes.includes('TEXT_CONTENT')) {
           return 'fontSize';
         }
-        if (variable.scopes.includes('EFFECT_FLOAT')) {
-          // Could be a shadow blur radius or similar
+        if (tokenScopes.includes('EFFECT_FLOAT')) {
           return 'dimension';
         }
         // @ts-ignore -- FONT_STYLE is a valid scope for font-weight but not appear in the official type (VariableScope)
-        if (variable.scopes.includes('FONT_STYLE')) {
+        if (tokenScopes.includes('FONT_STYLE')) {
           return 'number';
         }
       }
@@ -42,9 +40,6 @@ function tokenTypeFromVariable(variable: LocalVariable): StyleDictionaryType {
       return 'dimension';
     }
     case 'STRING': {
-      // For strings, we could potentially detect specific types based on value or name patterns
-      // This would require examining the actual value, which we don't have in this function
-      // If the function signature were changed, we could add more sophisticated detection
       return 'string';
     }
     case 'BOOLEAN':
