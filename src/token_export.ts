@@ -1,5 +1,5 @@
 import { GetLocalVariablesResponse, LocalVariable } from '@figma/rest-api-spec';
-import { rgbToHex } from './color.js';
+import { rgbToHex } from './utils.js';
 import { Token, TokensFile, StyleDictionaryType } from './types.js';
 
 function tokenTypeFromVariable(variable: LocalVariable): StyleDictionaryType {
