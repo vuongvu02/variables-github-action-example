@@ -2,6 +2,8 @@ import { GetLocalVariablesResponse, LocalVariable } from '@figma/rest-api-spec';
 import { rgbToHex } from './utils.js';
 import { Token, TokensFile, StyleDictionaryType } from './types.js';
 
+const RESPONSIVE_DEVICES = ['mobil', 'desktop'];
+
 function tokenTypeFromVariable(variable: LocalVariable): StyleDictionaryType {
   // Base mapping by resolvedType
   switch (variable.resolvedType) {
@@ -92,7 +94,11 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
 
       let obj: any = tokenFiles[fileName];
 
-      variable.name.split('/').forEach((groupName) => {
+      const variableName = RESPONSIVE_DEVICES.includes(String(mode.name).toLocaleLowerCase())
+        ? `${variable.name} ${mode.name}`
+        : variable.name;
+
+      variableName.split('/').forEach((groupName) => {
         obj[groupName] = obj[groupName] || {};
         obj = obj[groupName];
       });

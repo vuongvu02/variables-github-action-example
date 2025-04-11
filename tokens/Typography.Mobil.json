@@ -1,7 +1,7 @@
 {
   "Font": {
     "Family": {
-      "Primary": {
+      "Primary Mobil": {
         "$type": "string",
         "$value": "Titillium Web",
         "$description": "",
@@ -16,7 +16,7 @@
           }
         }
       },
-      "Secondary": {
+      "Secondary Mobil": {
         "$type": "string",
         "$value": "Roboto Slab",
         "$description": "",
@@ -33,7 +33,7 @@
       }
     },
     "Size": {
-      "xs": {
+      "xs Mobil": {
         "$type": "dimension",
         "$value": 12,
         "$description": "",
@@ -48,7 +48,7 @@
           }
         }
       },
-      "s": {
+      "s Mobil": {
         "$type": "dimension",
         "$value": 14,
         "$description": "",
@@ -63,7 +63,7 @@
           }
         }
       },
-      "m": {
+      "m Mobil": {
         "$type": "dimension",
         "$value": 16,
         "$description": "",
@@ -78,7 +78,7 @@
           }
         }
       },
-      "l": {
+      "l Mobil": {
         "$type": "dimension",
         "$value": 18,
         "$description": "",
@@ -93,7 +93,7 @@
           }
         }
       },
-      "xl": {
+      "xl Mobil": {
         "$type": "dimension",
         "$value": 20,
         "$description": "",
@@ -108,7 +108,7 @@
           }
         }
       },
-      "2xl": {
+      "2xl Mobil": {
         "$type": "dimension",
         "$value": 20,
         "$description": "",
@@ -123,7 +123,7 @@
           }
         }
       },
-      "3xl": {
+      "3xl Mobil": {
         "$type": "dimension",
         "$value": 24,
         "$description": "",
@@ -138,7 +138,7 @@
           }
         }
       },
-      "4xl": {
+      "4xl Mobil": {
         "$type": "dimension",
         "$value": 24,
         "$description": "",
@@ -153,7 +153,7 @@
           }
         }
       },
-      "5xl": {
+      "5xl Mobil": {
         "$type": "dimension",
         "$value": 35,
         "$description": "",
@@ -170,7 +170,7 @@
       }
     },
     "Line Height": {
-      "xs": {
+      "xs Mobil": {
         "$type": "dimension",
         "$value": 18,
         "$description": "",
@@ -185,7 +185,7 @@
           }
         }
       },
-      "s": {
+      "s Mobil": {
         "$type": "dimension",
         "$value": 21,
         "$description": "",
@@ -200,7 +200,7 @@
           }
         }
       },
-      "m": {
+      "m Mobil": {
         "$type": "dimension",
         "$value": 24,
         "$description": "",
@@ -215,7 +215,7 @@
           }
         }
       },
-      "l": {
+      "l Mobil": {
         "$type": "dimension",
         "$value": 27,
         "$description": "",
@@ -230,7 +230,7 @@
           }
         }
       },
-      "xl": {
+      "xl Mobil": {
         "$type": "dimension",
         "$value": 30,
         "$description": "",
@@ -245,7 +245,7 @@
           }
         }
       },
-      "2xl": {
+      "2xl Mobil": {
         "$type": "dimension",
         "$value": 30,
         "$description": "",
@@ -260,7 +260,7 @@
           }
         }
       },
-      "3xl": {
+      "3xl Mobil": {
         "$type": "dimension",
         "$value": 36,
         "$description": "",
@@ -275,7 +275,7 @@
           }
         }
       },
-      "4xl": {
+      "4xl Mobil": {
         "$type": "dimension",
         "$value": 36,
         "$description": "",
@@ -290,7 +290,7 @@
           }
         }
       },
-      "5xl": {
+      "5xl Mobil": {
         "$type": "dimension",
         "$value": 48,
         "$description": "",
@@ -307,7 +307,7 @@
       }
     },
     "Weight": {
-      "Normal": {
+      "Normal Mobil": {
         "$type": "number",
         "$value": 400,
         "$description": "",
@@ -322,7 +322,7 @@
           }
         }
       },
-      "Medium": {
+      "Medium Mobil": {
         "$type": "number",
         "$value": 500,
         "$description": "",
@@ -337,7 +337,7 @@
           }
         }
       },
-      "Semi-Bold": {
+      "Semi-Bold Mobil": {
         "$type": "number",
         "$value": 600,
         "$description": "",
@@ -352,7 +352,7 @@
           }
         }
       },
-      "Bold": {
+      "Bold Mobil": {
         "$type": "number",
         "$value": 700,
         "$description": "",

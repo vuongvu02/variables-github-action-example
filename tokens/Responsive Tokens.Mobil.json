@@ -1,5 +1,5 @@
 {
-  "Icon Size": {
+  "Icon Size Mobil": {
     "$type": "dimension",
     "$value": "{Size.32}",
     "$description": "",
@@ -14,7 +14,7 @@
       }
     }
   },
-  "Text Input Vertical Padding": {
+  "Text Input Vertical Padding Mobil": {
     "$type": "dimension",
     "$value": "{Spacing.8}",
     "$description": "",

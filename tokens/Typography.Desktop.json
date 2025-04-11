@@ -1,7 +1,7 @@
 {
   "Font": {
     "Family": {
-      "Primary": {
+      "Primary Desktop": {
         "$type": "string",
         "$value": "Titillium Web",
         "$description": "",
@@ -16,7 +16,7 @@
           }
         }
       },
-      "Secondary": {
+      "Secondary Desktop": {
         "$type": "string",
         "$value": "Roboto Slab",
         "$description": "",
@@ -33,7 +33,7 @@
       }
     },
     "Size": {
-      "xs": {
+      "xs Desktop": {
         "$type": "dimension",
         "$value": 12,
         "$description": "",
@@ -48,7 +48,7 @@
           }
         }
       },
-      "s": {
+      "s Desktop": {
         "$type": "dimension",
         "$value": 14,
         "$description": "",
@@ -63,7 +63,7 @@
           }
         }
       },
-      "m": {
+      "m Desktop": {
         "$type": "dimension",
         "$value": 16,
         "$description": "",
@@ -78,7 +78,7 @@
           }
         }
       },
-      "l": {
+      "l Desktop": {
         "$type": "dimension",
         "$value": 18,
         "$description": "",
@@ -93,7 +93,7 @@
           }
         }
       },
-      "xl": {
+      "xl Desktop": {
         "$type": "dimension",
         "$value": 20,
         "$description": "",
@@ -108,7 +108,7 @@
           }
         }
       },
-      "2xl": {
+      "2xl Desktop": {
         "$type": "dimension",
         "$value": 24,
         "$description": "",
@@ -123,7 +123,7 @@
           }
         }
       },
-      "3xl": {
+      "3xl Desktop": {
         "$type": "dimension",
         "$value": 30,
         "$description": "",
@@ -138,7 +138,7 @@
           }
         }
       },
-      "4xl": {
+      "4xl Desktop": {
         "$type": "dimension",
         "$value": 35,
         "$description": "",
@@ -153,7 +153,7 @@
           }
         }
       },
-      "5xl": {
+      "5xl Desktop": {
         "$type": "dimension",
         "$value": 45,
         "$description": "",
@@ -170,7 +170,7 @@
       }
     },
     "Line Height": {
-      "xs": {
+      "xs Desktop": {
         "$type": "dimension",
         "$value": 18,
         "$description": "",
@@ -185,7 +185,7 @@
           }
         }
       },
-      "s": {
+      "s Desktop": {
         "$type": "dimension",
         "$value": 21,
         "$description": "",
@@ -200,7 +200,7 @@
           }
         }
       },
-      "m": {
+      "m Desktop": {
         "$type": "dimension",
         "$value": 24,
         "$description": "",
@@ -215,7 +215,7 @@
           }
         }
       },
-      "l": {
+      "l Desktop": {
         "$type": "dimension",
         "$value": 27,
         "$description": "",
@@ -230,7 +230,7 @@
           }
         }
       },
-      "xl": {
+      "xl Desktop": {
         "$type": "dimension",
         "$value": 30,
         "$description": "",
@@ -245,7 +245,7 @@
           }
         }
       },
-      "2xl": {
+      "2xl Desktop": {
         "$type": "dimension",
         "$value": 36,
         "$description": "",
@@ -260,7 +260,7 @@
           }
         }
       },
-      "3xl": {
+      "3xl Desktop": {
         "$type": "dimension",
         "$value": 45,
         "$description": "",
@@ -275,7 +275,7 @@
           }
         }
       },
-      "4xl": {
+      "4xl Desktop": {
         "$type": "dimension",
         "$value": 52.5,
         "$description": "",
@@ -290,7 +290,7 @@
           }
         }
       },
-      "5xl": {
+      "5xl Desktop": {
         "$type": "dimension",
         "$value": 60,
         "$description": "",
@@ -307,7 +307,7 @@
       }
     },
     "Weight": {
-      "Normal": {
+      "Normal Desktop": {
         "$type": "number",
         "$value": 400,
         "$description": "",
@@ -322,7 +322,7 @@
           }
         }
       },
-      "Medium": {
+      "Medium Desktop": {
         "$type": "number",
         "$value": 500,
         "$description": "",
@@ -337,7 +337,7 @@
           }
         }
       },
-      "Semi-Bold": {
+      "Semi-Bold Desktop": {
         "$type": "number",
         "$value": 600,
         "$description": "",
@@ -352,7 +352,7 @@
           }
         }
       },
-      "Bold": {
+      "Bold Desktop": {
         "$type": "number",
         "$value": 700,
         "$description": "",
