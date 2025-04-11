@@ -1,48 +1,67 @@
-import StyleDictionary from 'style-dictionary';
+import * as glob from 'glob';
+import StyleDictionary, { Config } from 'style-dictionary';
 
-async function run() {
-  const sd = new StyleDictionary(
-    {
-      source: ['tokens/**/*.json'],
+const inputTokenSets = glob.sync('tokens/**/*.json');
+
+const TOKEN_THEME_MODES = ['light', 'dark'];
+const DEFAULT_MODE = 'light';
+
+const getConfigs = (): Config[] => {
+  return TOKEN_THEME_MODES.map((tokenMode) => {
+    // Get token files that are either mode-agnostic or match the current mode
+    const tokenModeSource = inputTokenSets.filter((tokenPath) => {
+      // Extract mode from filename pattern (e.g. 'tokens/something.mode.json')
+      const modeMatch = tokenPath.match(/tokens\/[^.]+\.([^.]+)\.json/) || [];
+      const fileMode = modeMatch[1].toLowerCase();
+
+      // Include file if:
+      // 1. It's not a recognized theme mode (generic token)
+      // 2. Or it matches the current theme mode we're building
+      return !TOKEN_THEME_MODES.includes(fileMode) || fileMode === tokenMode;
+    });
+
+    console.log(tokenModeSource);
+
+    return {
+      source: tokenModeSource,
       platforms: {
         css: {
           // "prefix": "bls-"
           transformGroup: 'css',
-          transforms: ['name/kebab', 'size/pxToRem'],
+          transforms: ['size/pxToRem'],
           basePxFontSize: 16,
           buildPath: 'build/css/',
           files: [
             {
-              destination: 'variables.css',
+              destination: `variables.${tokenMode}.css`,
               format: 'css/variables',
-              // options: {
-              //   outputReferences: true,
-              // },
+              options: {
+                selector: DEFAULT_MODE !== tokenMode ? `[data-theme="${tokenMode}"]` : '',
+                outputReferences: true,
+              },
             },
           ],
         },
         scss: {
-          // "prefix": "bls-"
           transformGroup: 'scss',
-          transforms: ['name/kebab', 'size/pxToRem'],
+          transforms: ['size/pxToRem'],
           basePxFontSize: 16,
           buildPath: 'build/scss/',
           files: [
             {
-              destination: 'variables.scss',
+              destination: `variables.${tokenMode}.scss`,
               format: 'scss/variables',
             },
           ],
         },
         ts: {
-          // "prefix": "bls-"
           transformGroup: 'js',
           transforms: ['name/camel', 'size/pxToRem'],
           basePxFontSize: 16,
           buildPath: 'build/ts/',
           files: [
             {
-              destination: 'variables.js',
+              destination: `variables.${tokenMode}.js`,
               format: 'javascript/es6',
             },
             {
@@ -52,12 +71,18 @@ async function run() {
           ],
         },
       },
-    },
-    { verbosity: 'verbose' },
-  );
+    };
+  });
+};
 
-  await sd.cleanAllPlatforms();
-  await sd.buildAllPlatforms();
+async function run() {
+  const configs = getConfigs();
+
+  configs.forEach(async (config: Config) => {
+    const sd = new StyleDictionary(config);
+    await sd.cleanAllPlatforms();
+    await sd.buildAllPlatforms();
+  });
 }
 
 run();
