@@ -1,9 +1,68 @@
 import 'dotenv/config';
 import * as fs from 'fs';
+import { GetLocalVariablesResponse } from '@figma/rest-api-spec';
 import FigmaApi from './figma-api.js';
-import { tokenFilesFromLocalVariables } from './token-export.js';
+import { Token, TokensFile } from './types.js';
+import { tokenTypeFromVariable, tokenValueFromVariable } from './utils.js';
 
+const RESPONSIVE_DEVICES = ['mobil', 'desktop'];
 const OUTPUT_DIR = 'tokens';
+
+export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVariablesResponse) {
+  const tokenFiles: { [fileName: string]: TokensFile } = {};
+  const localVariableCollections = localVariablesResponse.meta.variableCollections;
+  const localVariables = localVariablesResponse.meta.variables;
+
+  Object.values(localVariables).forEach((variable) => {
+    // Skip remote variables because we only want to generate tokens for local variables
+    if (variable.remote) {
+      return;
+    }
+
+    const collection = localVariableCollections[variable.variableCollectionId];
+
+    collection.modes.forEach((mode) => {
+      const fileName = `${collection.name}.${mode.name}.json`;
+
+      if (!tokenFiles[fileName]) {
+        tokenFiles[fileName] = {};
+      }
+
+      let obj: any = tokenFiles[fileName];
+
+      if (variable.name.includes('Underline/Color')) {
+        console.log('variable.name', variable.name);
+      }
+
+      const variableName = RESPONSIVE_DEVICES.includes(String(mode.name).toLocaleLowerCase())
+        ? `${variable.name} ${mode.name}`
+        : variable.name;
+
+      variableName.split('/').forEach((groupName) => {
+        obj[groupName] = obj[groupName] || {};
+        obj = obj[groupName];
+      });
+
+      const token: Token = {
+        $type: tokenTypeFromVariable(variable),
+        $value: tokenValueFromVariable(variable, mode.modeId, localVariables),
+        $description: variable.description,
+        $extensions: {
+          'com.figma': {
+            hiddenFromPublishing: variable.hiddenFromPublishing,
+            scopes: variable.scopes,
+            codeSyntax: variable.codeSyntax,
+            mode: mode.name,
+          },
+        },
+      };
+
+      Object.assign(obj, token);
+    });
+  });
+
+  return tokenFiles;
+}
 
 async function main() {
   if (!process.env.PERSONAL_ACCESS_TOKEN || !process.env.FILE_KEY) {

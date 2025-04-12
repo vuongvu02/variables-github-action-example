@@ -20,8 +20,6 @@ const getConfigs = (): Config[] => {
       return !TOKEN_THEME_MODES.includes(fileMode) || fileMode === tokenMode;
     });
 
-    console.log(tokenModeSource);
-
     return {
       source: tokenModeSource,
       platforms: {
