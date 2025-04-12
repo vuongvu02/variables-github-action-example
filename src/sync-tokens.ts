@@ -30,10 +30,6 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
 
       let obj: any = tokenFiles[fileName];
 
-      if (variable.name.includes('Underline/Color')) {
-        console.log('variable.name', variable.name);
-      }
-
       const variableName = RESPONSIVE_DEVICES.includes(String(mode.name).toLocaleLowerCase())
         ? `${variable.name} ${mode.name}`
         : variable.name;
@@ -41,6 +37,42 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
       variableName.split('/').forEach((groupName) => {
         obj[groupName] = obj[groupName] || {};
         obj = obj[groupName];
+
+        /**
+         * Handle token namespace collisions
+         * When a group name matches a token name, create a "_" child to preserve both:
+         *
+         * Example structure:
+         * {
+         *   Link: {
+         *     Underline: {
+         *       Color: {
+         *         Tertiary: {
+         *           _: { $type: "color", $value: "{Color.Text.Primary}" }, // Token properties
+         *           Active: { $type: "color", $value: "#0000FF" }          // Child token
+         *         }
+         *       }
+         *     }
+         *   }
+         * }
+         *
+         * Generated variables:
+         * --link-underline-color-tertiary: var(--color-text-primary)
+         * --link-underline-color-tertiary-active: #0000FF
+         */
+        if (obj.hasOwnProperty('$type') || obj.hasOwnProperty('$value')) {
+          obj._ = {
+            $type: obj.$type,
+            $value: obj.$value,
+            $description: obj.$description,
+            $extensions: obj.$extensions,
+          };
+
+          delete obj.$type;
+          delete obj.$value;
+          delete obj.$description;
+          delete obj.$extensions;
+        }
       });
 
       const token: Token = {

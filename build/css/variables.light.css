@@ -124,6 +124,8 @@
   --color-text-fixed-black: var(--color-base-black);
   --color-text-fixed-white: var(--color-base-white);
   --color-interactive-background: var(--color-green-700);
+  --color-interactive-background-hover: var(--color-green-400);
+  --color-interactive-background-disabled: var(--color-neutral-200);
   --color-interactive-background-alternative-1: var(--color-green-700);
   --color-interactive-background-alternative-2: var(--color-green-800);
   --color-interactive-text: var(--color-green-800);
@@ -164,17 +166,13 @@
   --radius-large: var(--size-16);
   --icon-size-mobil: var(--size-32);
   --icon-size-desktop: var(--size-24);
+  --link-underline-color-tertiary-active: {Color.Interactive.Underline.Hover Neutral};
   --link-underline-color-primary-active: {Color.Interactive.Underline.Hover};
   --link-underline-color-secondary-hover: {Color.Interactive.Underline.Hover};
   --link-underline-color-secondary-active: {Color.Interactive.Underline.Hover};
   --link-underline-color-secondary-focus: {Color.Interactive.Underline.Hover};
-  --button-background-color-primary-hover: {Color.Interactive.Background.Hover};
-  --button-background-color-primary-active: {Color.Interactive.Background.Hover};
-  --button-background-color-primary-disabled: {Color.Interactive.Background.Disabled};
   --button-background-color-secondary-default: var(--color-base-tranparent);
   --button-background-color-secondary-default-opaque: var(--color-base-white);
-  --button-background-color-secondary-hover: {Color.Interactive.Background.Hover};
-  --button-background-color-secondary-active: {Color.Interactive.Background.Hover};
   --button-background-color-secondary-focus: var(--color-base-tranparent);
   --button-background-color-secondary-disabled: var(--color-base-tranparent);
   --focus-thickness: var(--sizing-2);
@@ -191,8 +189,16 @@
   --link-underline-width-tertiary: var(--sizing-1);
   --link-underline-offset: var(--sizing-4);
   --button-text-color-primary: var(--color-text-fixed-black);
+  --button-text-color-primary-disabled: var(--color-text-disabled);
   --button-text-color-secondary: var(--color-text-primary);
+  --button-text-color-secondary-disabled: var(--color-text-disabled);
   --button-background-color-primary-default: var(--color-brand);
+  --button-background-color-primary-hover: var(--color-interactive-background-hover);
+  --button-background-color-primary-active: var(--color-interactive-background-hover);
   --button-background-color-primary-focus: var(--color-brand);
+  --button-background-color-primary-disabled: var(--color-interactive-background-disabled);
+  --button-background-color-secondary-hover: var(--color-interactive-background-hover);
+  --button-background-color-secondary-active: var(--color-interactive-background-hover);
   --button-border-color-secondary: var(--color-brand);
+  --button-border-color-secondary-disabled: var(--color-interactive-background-disabled);
 }

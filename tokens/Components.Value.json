@@ -46,15 +46,17 @@
     "Underline": {
       "Color": {
         "Tertiary": {
-          "$type": "color",
-          "$value": "{Color.Text.Primary}",
-          "$description": "",
-          "$extensions": {
-            "com.figma": {
-              "hiddenFromPublishing": false,
-              "scopes": [],
-              "codeSyntax": {},
-              "mode": "Value"
+          "_": {
+            "$type": "color",
+            "$value": "{Color.Text.Primary}",
+            "$description": "",
+            "$extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [],
+                "codeSyntax": {},
+                "mode": "Value"
+              }
             }
           },
           "Active": {
@@ -201,17 +203,19 @@
     "Text": {
       "Color": {
         "Primary": {
-          "$type": "color",
-          "$value": "{Color.Text.Fixed Black}",
-          "$description": "",
-          "$extensions": {
-            "com.figma": {
-              "hiddenFromPublishing": false,
-              "scopes": [
-                "TEXT_FILL"
-              ],
-              "codeSyntax": {},
-              "mode": "Value"
+          "_": {
+            "$type": "color",
+            "$value": "{Color.Text.Fixed Black}",
+            "$description": "",
+            "$extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "TEXT_FILL"
+                ],
+                "codeSyntax": {},
+                "mode": "Value"
+              }
             }
           },
           "Disabled": {
@@ -229,15 +233,17 @@
           }
         },
         "Secondary": {
-          "$type": "color",
-          "$value": "{Color.Text.Primary}",
-          "$description": "",
-          "$extensions": {
-            "com.figma": {
-              "hiddenFromPublishing": false,
-              "scopes": [],
-              "codeSyntax": {},
-              "mode": "Value"
+          "_": {
+            "$type": "color",
+            "$value": "{Color.Text.Primary}",
+            "$description": "",
+            "$extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [],
+                "codeSyntax": {},
+                "mode": "Value"
+              }
             }
           },
           "Disabled": {
@@ -454,15 +460,17 @@
     "Border": {
       "Color": {
         "Secondary": {
-          "$type": "color",
-          "$value": "{Color.Brand}",
-          "$description": "",
-          "$extensions": {
-            "com.figma": {
-              "hiddenFromPublishing": false,
-              "scopes": [],
-              "codeSyntax": {},
-              "mode": "Value"
+          "_": {
+            "$type": "color",
+            "$value": "{Color.Brand}",
+            "$description": "",
+            "$extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [],
+                "codeSyntax": {},
+                "mode": "Value"
+              }
             }
           },
           "Disabled": {

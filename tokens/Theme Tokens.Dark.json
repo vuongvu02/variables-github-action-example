@@ -294,19 +294,21 @@
     },
     "Interactive": {
       "Background": {
-        "$type": "color",
-        "$value": "{Color.Green.500}",
-        "$description": "",
-        "$extensions": {
-          "com.figma": {
-            "hiddenFromPublishing": false,
-            "scopes": [
-              "FRAME_FILL",
-              "SHAPE_FILL",
-              "STROKE_COLOR"
-            ],
-            "codeSyntax": {},
-            "mode": "Dark"
+        "_": {
+          "$type": "color",
+          "$value": "{Color.Green.500}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {},
+              "mode": "Dark"
+            }
           }
         },
         "Hover": {
