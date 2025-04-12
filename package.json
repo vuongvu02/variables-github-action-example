@@ -2,6 +2,7 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "variables-github-action-example",
   "type": "module",
+  "packageManager": "pnpm@10.8.0",
   "scripts": {
     "build": "tsx src/build.ts",
     "clean": "rm -f tokens/*.json",
