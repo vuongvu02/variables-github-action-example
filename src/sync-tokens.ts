@@ -28,15 +28,17 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
         tokenFiles[fileName] = {};
       }
 
-      let obj: any = tokenFiles[fileName];
+      let tokenObj: any = tokenFiles[fileName];
 
       const variableName = RESPONSIVE_DEVICES.includes(String(mode.name).toLocaleLowerCase())
         ? `${variable.name} ${mode.name}`
         : variable.name;
 
-      variableName.split('/').forEach((groupName) => {
-        obj[groupName] = obj[groupName] || {};
-        obj = obj[groupName];
+      // let shouldSkip = false;
+
+      variableName.split('/').forEach((groupName, index) => {
+        tokenObj[groupName] = tokenObj[groupName] || {};
+        tokenObj = tokenObj[groupName];
 
         /**
          * Handle token namespace collisions
@@ -60,20 +62,32 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
          * --link-underline-color-tertiary: var(--color-text-primary)
          * --link-underline-color-tertiary-active: #0000FF
          */
-        if (obj.hasOwnProperty('$type') || obj.hasOwnProperty('$value')) {
-          obj._ = {
-            $type: obj.$type,
-            $value: obj.$value,
-            $description: obj.$description,
-            $extensions: obj.$extensions,
+        if (tokenObj.hasOwnProperty('$type') || tokenObj.hasOwnProperty('$value')) {
+          tokenObj._ = {
+            $type: tokenObj.$type,
+            $value: tokenObj.$value,
+            $description: tokenObj.$description,
+            $extensions: tokenObj.$extensions,
           };
 
-          delete obj.$type;
-          delete obj.$value;
-          delete obj.$description;
-          delete obj.$extensions;
+          delete tokenObj.$type;
+          delete tokenObj.$value;
+          delete tokenObj.$description;
+          delete tokenObj.$extensions;
         }
+
+        // const isLastGroup = index === variableName.split('/').length - 1;
+        // const isNotEmpty = Object.keys(tokenObj).length !== 0;
+        // if (isLastGroup && isNotEmpty) {
+        //   // tokenObj['_'] = tokenObj['_'] || {};
+        //   // tokenObj = tokenObj['_'];
+        //   shouldSkip = true;
+        // }
       });
+
+      // if (shouldSkip) {
+      //   return;
+      // }
 
       const token: Token = {
         $type: tokenTypeFromVariable(variable),
@@ -89,7 +103,7 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
         },
       };
 
-      Object.assign(obj, token);
+      Object.assign(tokenObj, token);
     });
   });
 
