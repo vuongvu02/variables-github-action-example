@@ -294,7 +294,7 @@
     },
     "Interactive": {
       "Background": {
-        "_": {
+        "Default": {
           "$type": "color",
           "$value": "{Color.Green.700}",
           "$description": "",
@@ -423,17 +423,19 @@
             }
           }
         },
-        "$type": "color",
-        "$value": "{Color.Green.700}",
-        "$description": "",
-        "$extensions": {
-          "com.figma": {
-            "hiddenFromPublishing": false,
-            "scopes": [
-              "STROKE_COLOR"
-            ],
-            "codeSyntax": {},
-            "mode": "Light"
+        "Default": {
+          "$type": "color",
+          "$value": "{Color.Green.700}",
+          "$description": "",
+          "$extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {},
+              "mode": "Light"
+            }
           }
         }
       },

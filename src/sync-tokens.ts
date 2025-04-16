@@ -57,19 +57,19 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
          * --link-underline-color-tertiary: var(--color-text-primary)
          * --link-underline-color-tertiary-active: #0000FF
          */
-        if (tokenObj.hasOwnProperty('$type') || tokenObj.hasOwnProperty('$value')) {
-          tokenObj._ = {
-            $type: tokenObj.$type,
-            $value: tokenObj.$value,
-            $description: tokenObj.$description,
-            $extensions: tokenObj.$extensions,
-          };
+        // if (tokenObj.hasOwnProperty('$type') || tokenObj.hasOwnProperty('$value')) {
+        //   tokenObj._ = {
+        //     $type: tokenObj.$type,
+        //     $value: tokenObj.$value,
+        //     $description: tokenObj.$description,
+        //     $extensions: tokenObj.$extensions,
+        //   };
 
-          delete tokenObj.$type;
-          delete tokenObj.$value;
-          delete tokenObj.$description;
-          delete tokenObj.$extensions;
-        }
+        //   delete tokenObj.$type;
+        //   delete tokenObj.$value;
+        //   delete tokenObj.$description;
+        //   delete tokenObj.$extensions;
+        // }
 
         // const isLastGroup = index === variableName.split('/').length - 1;
         // const isNotEmpty = Object.keys(tokenObj).length !== 0;

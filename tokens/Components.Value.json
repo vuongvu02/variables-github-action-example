@@ -46,7 +46,7 @@
     "Underline": {
       "Color": {
         "Tertiary": {
-          "_": {
+          "Default": {
             "$type": "color",
             "$value": "{Color.Text.Primary}",
             "$description": "",
@@ -76,7 +76,7 @@
         "Primary": {
           "Default": {
             "$type": "color",
-            "$value": "{Color.Interactive.Underline}",
+            "$value": "{Color.Interactive.Underline.Default}",
             "$description": "",
             "$extensions": {
               "com.figma": {
@@ -203,7 +203,7 @@
     "Text": {
       "Color": {
         "Primary": {
-          "_": {
+          "Default": {
             "$type": "color",
             "$value": "{Color.Text.Fixed Black}",
             "$description": "",
@@ -233,7 +233,7 @@
           }
         },
         "Secondary": {
-          "_": {
+          "Default": {
             "$type": "color",
             "$value": "{Color.Text.Primary}",
             "$description": "",
@@ -460,7 +460,7 @@
     "Border": {
       "Color": {
         "Secondary": {
-          "_": {
+          "Default": {
             "$type": "color",
             "$value": "{Color.Brand}",
             "$description": "",
