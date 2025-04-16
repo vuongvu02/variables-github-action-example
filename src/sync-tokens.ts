@@ -5,7 +5,6 @@ import FigmaApi from './figma-api.js';
 import { Token, TokensFile } from './types.js';
 import { tokenTypeFromVariable, tokenValueFromVariable } from './utils.js';
 
-const RESPONSIVE_DEVICES = ['mobil', 'desktop'];
 const OUTPUT_DIR = 'tokens';
 
 export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVariablesResponse) {
@@ -30,13 +29,9 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
 
       let tokenObj: any = tokenFiles[fileName];
 
-      const variableName = RESPONSIVE_DEVICES.includes(String(mode.name).toLocaleLowerCase())
-        ? `${variable.name} ${mode.name}`
-        : variable.name;
-
       // let shouldSkip = false;
 
-      variableName.split('/').forEach((groupName, index) => {
+      variable.name.split('/').forEach((groupName, index) => {
         tokenObj[groupName] = tokenObj[groupName] || {};
         tokenObj = tokenObj[groupName];
 

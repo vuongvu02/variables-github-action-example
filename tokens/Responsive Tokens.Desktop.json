@@ -1,5 +1,5 @@
 {
-  "Icon Size Desktop": {
+  "Icon Size": {
     "$type": "dimension",
     "$value": "{Size.24}",
     "$description": "",
@@ -14,7 +14,7 @@
       }
     }
   },
-  "Text Input Vertical Padding Desktop": {
+  "Text Input Vertical Padding": {
     "$type": "dimension",
     "$value": "{Spacing.4}",
     "$description": "",
