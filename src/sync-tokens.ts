@@ -29,60 +29,10 @@ export function tokenFilesFromLocalVariables(localVariablesResponse: GetLocalVar
 
       let tokenObj: any = tokenFiles[fileName];
 
-      // let shouldSkip = false;
-
-      variable.name.split('/').forEach((groupName, index) => {
+      variable.name.split('/').forEach((groupName) => {
         tokenObj[groupName] = tokenObj[groupName] || {};
         tokenObj = tokenObj[groupName];
-
-        /**
-         * Handle token namespace collisions
-         * When a group name matches a token name, create a "_" child to preserve both:
-         *
-         * Example structure:
-         * {
-         *   Link: {
-         *     Underline: {
-         *       Color: {
-         *         Tertiary: {
-         *           _: { $type: "color", $value: "{Color.Text.Primary}" }, // Token properties
-         *           Active: { $type: "color", $value: "#0000FF" }          // Child token
-         *         }
-         *       }
-         *     }
-         *   }
-         * }
-         *
-         * Generated variables:
-         * --link-underline-color-tertiary: var(--color-text-primary)
-         * --link-underline-color-tertiary-active: #0000FF
-         */
-        // if (tokenObj.hasOwnProperty('$type') || tokenObj.hasOwnProperty('$value')) {
-        //   tokenObj._ = {
-        //     $type: tokenObj.$type,
-        //     $value: tokenObj.$value,
-        //     $description: tokenObj.$description,
-        //     $extensions: tokenObj.$extensions,
-        //   };
-
-        //   delete tokenObj.$type;
-        //   delete tokenObj.$value;
-        //   delete tokenObj.$description;
-        //   delete tokenObj.$extensions;
-        // }
-
-        // const isLastGroup = index === variableName.split('/').length - 1;
-        // const isNotEmpty = Object.keys(tokenObj).length !== 0;
-        // if (isLastGroup && isNotEmpty) {
-        //   // tokenObj['_'] = tokenObj['_'] || {};
-        //   // tokenObj = tokenObj['_'];
-        //   shouldSkip = true;
-        // }
       });
-
-      // if (shouldSkip) {
-      //   return;
-      // }
 
       const token: Token = {
         $type: tokenTypeFromVariable(variable),
