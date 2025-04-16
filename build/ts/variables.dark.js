@@ -2,177 +2,269 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-export const fontFamilyPrimary = "Titillium Web";
-export const fontFamilySecondary = "Roboto Slab";
-export const fontSizeXs = "0.75rem";
-export const fontSizeS = "0.875rem";
-export const fontSizeM = "1rem";
-export const fontSizeL = "1.125rem";
-export const fontSizeXl = "1.25rem";
-export const fontSize2xl = "1.5rem";
-export const fontSize3xl = "1.875rem";
-export const fontSize4xl = "2.1875rem";
-export const fontSize5xl = "2.8125rem";
-export const fontLineHeightXs = "1.125rem";
-export const fontLineHeightS = "1.3125rem";
-export const fontLineHeightM = "1.5rem";
-export const fontLineHeightL = "1.6875rem";
-export const fontLineHeightXl = "1.875rem";
-export const fontLineHeight2xl = "2.25rem";
-export const fontLineHeight3xl = "2.8125rem";
-export const fontLineHeight4xl = "3.28125rem";
-export const fontLineHeight5xl = "3.75rem";
-export const fontWeightNormal = 400;
-export const fontWeightMedium = 500;
-export const fontWeightSemiBold = 600;
-export const fontWeightBold = 700;
-export const colorBrand = "#95c11e";
-export const colorBackground = "#151515";
-export const colorBackgroundAlternative1 = "#333333";
-export const colorBackgroundAlternative2 = "#3e510d";
-export const colorBackgroundAlternative3 = "#707070";
-export const colorIconWhite = "#ffffff";
-export const colorElevationBackground1 = "#222222";
-export const colorElevationBackground2 = "#333333";
-export const colorElevationIconsWhite = "#151515";
-export const colorElevationIconsBlack = "#f5f5f5";
-export const colorDivider = "#4d4d4d";
-export const colorTag = "#d5e6a5";
-export const colorTextPrimary = "#ffffff";
-export const colorTextSecondary = "#929292";
-export const colorTextDisabled = "#929292";
-export const colorTextError = "#e13333";
-export const colorTextFixedBlack = "#000000";
-export const colorTextFixedWhite = "#ffffff";
-export const colorInteractiveBackgroundDefault = "#95c11e";
-export const colorInteractiveBackgroundHover = "#a8cb49";
-export const colorInteractiveBackgroundDisabled = "#4d4d4d";
-export const colorInteractiveBackgroundAlternative1 = "#749900";
-export const colorInteractiveBackgroundAlternative2 = "#749900";
-export const colorInteractiveText = "#95c11e";
-export const colorInteractiveUnderlineHover = "#a8cb49";
-export const colorInteractiveUnderlineHoverNeutral = "#707070";
-export const colorInteractiveUnderlineDefault = "#95c11e";
-export const colorInteractiveBorderDefault = "#ffffff";
-export const colorInteractiveBorderSelected = "#95c11e";
-export const colorHintErrorBackground = "#f09999";
-export const colorHintErrorBorder = "#e13333";
-export const colorHintSuccessBackground = "#d5e6a5";
-export const colorHintSuccessBorder = "#5b7900";
-export const colorBaseTranparent = "#ffffff00";
-export const colorBaseWhite = "#ffffff";
-export const colorBaseBlack = "#000000";
-export const colorNeutral50 = "#f5f5f5";
-export const colorNeutral100 = "#e2e2e2";
-export const colorNeutral200 = "#c6c6c6";
-export const colorNeutral300 = "#a9a9a9";
-export const colorNeutral400 = "#929292";
-export const colorNeutral500 = "#707070";
-export const colorNeutral600 = "#666666";
-export const colorNeutral700 = "#4d4d4d";
-export const colorNeutral800 = "#333333";
-export const colorNeutral900 = "#222222";
-export const colorNeutral950 = "#151515";
-export const colorGreen50 = "#f5f9e9";
-export const colorGreen100 = "#eaf3d2";
-export const colorGreen200 = "#d5e6a5";
-export const colorGreen300 = "#bfda78";
-export const colorGreen400 = "#a8cb49";
-export const colorGreen500 = "#95c11e";
-export const colorGreen600 = "#86ae1b";
-export const colorGreen700 = "#749900";
-export const colorGreen800 = "#5b7900";
-export const colorGreen900 = "#3e510d";
-export const colorGreen950 = "#2c3a09";
-export const colorRed50 = "#fdf2f2";
-export const colorRed100 = "#f8cccc";
-export const colorRed200 = "#f09999";
-export const colorRed300 = "#e96666";
-export const colorRed400 = "#e13333";
-export const colorRed500 = "#da0000";
-export const colorRed600 = "#c50000";
-export const colorRed700 = "#b00000";
-export const colorRed800 = "#8e0000";
-export const colorRed900 = "#6b0000";
-export const colorRed950 = "#470000";
-export const focusColor = "#ffffff";
-export const focusThickness = "0.125rem";
-export const focusOffset = "0.25rem";
-export const sizing1 = "0.0625rem";
-export const sizing2 = "0.125rem";
-export const sizing4 = "0.25rem";
-export const sizing8 = "0.5rem";
-export const sizing16 = "1rem";
-export const sizing24 = "1.5rem";
-export const sizing32 = "2rem";
-export const sizing40 = "2.5rem";
-export const sizing48 = "3rem";
-export const sizing64 = "4rem";
-export const spacing0 = "0";
-export const spacing2 = "0.125rem";
-export const spacing4 = "0.25rem";
-export const spacing8 = "0.5rem";
-export const spacing16 = "1rem";
-export const spacing24 = "1.5rem";
-export const spacing32 = "2rem";
-export const spacing40 = "2.5rem";
-export const spacing48 = "3rem";
-export const spacing64 = "4rem";
-export const spacing96 = "6rem";
-export const spacing128 = "8rem";
-export const spacing160 = "10rem";
-export const radiusMedium = "0.5rem";
-export const radiusNone = "0";
-export const radiusSmall = "0.25rem";
-export const radiusLarge = "1rem";
-export const iconSize = "1.5rem";
-export const textInputVerticalPadding = "0.25rem";
-export const size0 = "0";
-export const size1 = "0.0625rem";
-export const size2 = "0.125rem";
-export const size4 = "0.25rem";
-export const size8 = "0.5rem";
-export const size12 = "0.75rem";
-export const size16 = "1rem";
-export const size20 = "1.25rem";
-export const size24 = "1.5rem";
-export const size32 = "2rem";
-export const size40 = "2.5rem";
-export const size48 = "3rem";
-export const size64 = "4rem";
-export const size80 = "5rem";
-export const size96 = "6rem";
-export const size112 = "7rem";
-export const size128 = "8rem";
-export const size160 = "10rem";
-export const linkTextColorPrimary = "#ffffff";
-export const linkTextColorSecondary = "#95c11e";
-export const linkTextColorTertiary = "#ffffff";
-export const linkUnderlineColorTertiaryDefault = "#ffffff";
-export const linkUnderlineColorTertiaryActive = "#707070";
-export const linkUnderlineColorPrimaryDefault = "#95c11e";
-export const linkUnderlineColorPrimaryActive = "#a8cb49";
-export const linkUnderlineColorSecondaryHover = "#a8cb49";
-export const linkUnderlineColorSecondaryActive = "#a8cb49";
-export const linkUnderlineColorSecondaryFocus = "#a8cb49";
-export const linkUnderlineWidthPrimary = "0.125rem";
-export const linkUnderlineWidthSecondary = "0.125rem";
-export const linkUnderlineWidthTertiary = "0.0625rem";
-export const linkUnderlineOffset = "0.25rem";
-export const buttonTextColorPrimaryDefault = "#000000";
-export const buttonTextColorPrimaryDisabled = "#929292";
-export const buttonTextColorSecondaryDefault = "#ffffff";
-export const buttonTextColorSecondaryDisabled = "#929292";
-export const buttonBackgroundColorPrimaryDefault = "#95c11e";
-export const buttonBackgroundColorPrimaryHover = "#a8cb49";
-export const buttonBackgroundColorPrimaryActive = "#a8cb49";
-export const buttonBackgroundColorPrimaryFocus = "#95c11e";
-export const buttonBackgroundColorPrimaryDisabled = "#4d4d4d";
-export const buttonBackgroundColorSecondaryDefault = "#ffffff00";
-export const buttonBackgroundColorSecondaryDefaultOpaque = "#ffffff";
-export const buttonBackgroundColorSecondaryHover = "#a8cb49";
-export const buttonBackgroundColorSecondaryActive = "#a8cb49";
-export const buttonBackgroundColorSecondaryFocus = "#ffffff00";
-export const buttonBackgroundColorSecondaryDisabled = "#ffffff00";
-export const buttonBorderColorSecondaryDefault = "#95c11e";
-export const buttonBorderColorSecondaryDisabled = "#4d4d4d";
+export default {
+  Font: {
+    Family: {
+      Primary: "Titillium Web",
+      Secondary: "Roboto Slab",
+    },
+    Size: {
+      xs: "0.75rem",
+      s: "0.875rem",
+      m: "1rem",
+      l: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.1875rem",
+      "5xl": "2.8125rem",
+    },
+    "Line Height": {
+      xs: "1.125rem",
+      s: "1.3125rem",
+      m: "1.5rem",
+      l: "1.6875rem",
+      xl: "1.875rem",
+      "2xl": "2.25rem",
+      "3xl": "2.8125rem",
+      "4xl": "3.28125rem",
+      "5xl": "3.75rem",
+    },
+    Weight: {
+      Normal: 400,
+      Medium: 500,
+      "Semi-Bold": 600,
+      Bold: 700,
+    },
+  },
+  Color: {
+    Brand: "#95c11e",
+    Background: "#151515",
+    "Background Alternative 1": "#333333",
+    "Background Alternative 2": "#3e510d",
+    "Background Alternative 3": "#707070",
+    "Icon White": "#ffffff",
+    Elevation: {
+      "Background 1": "#222222",
+      "Background 2": "#333333",
+      "Icons White": "#151515",
+      "Icons Black": "#f5f5f5",
+    },
+    Divider: "#4d4d4d",
+    Tag: "#d5e6a5",
+    Text: {
+      Primary: "#ffffff",
+      Secondary: "#929292",
+      Disabled: "#929292",
+      Error: "#e13333",
+      "Fixed Black": "#000000",
+      "Fixed White": "#ffffff",
+    },
+    Interactive: {
+      Background: {
+        Default: "#95c11e",
+        Hover: "#a8cb49",
+        Disabled: "#4d4d4d",
+      },
+      "Background Alternative 1": "#749900",
+      "Background Alternative 2": "#749900",
+      Text: "#95c11e",
+      Underline: {
+        Hover: "#a8cb49",
+        "Hover Neutral": "#707070",
+        Default: "#95c11e",
+      },
+      Border: {
+        Default: "#ffffff",
+        Selected: "#95c11e",
+      },
+    },
+    Hint: {
+      Error: {
+        Background: "#f09999",
+        Border: "#e13333",
+      },
+      Success: {
+        Background: "#d5e6a5",
+        Border: "#5b7900",
+      },
+    },
+    Base: {
+      Transparent: "#ffffff00",
+      White: "#ffffff",
+      Black: "#000000",
+    },
+    Neutral: {
+      "50": "#f5f5f5",
+      "100": "#e2e2e2",
+      "200": "#c6c6c6",
+      "300": "#a9a9a9",
+      "400": "#929292",
+      "500": "#707070",
+      "600": "#666666",
+      "700": "#4d4d4d",
+      "800": "#333333",
+      "900": "#222222",
+      "950": "#151515",
+    },
+    Green: {
+      "50": "#f5f9e9",
+      "100": "#eaf3d2",
+      "200": "#d5e6a5",
+      "300": "#bfda78",
+      "400": "#a8cb49",
+      "500": "#95c11e",
+      "600": "#86ae1b",
+      "700": "#749900",
+      "800": "#5b7900",
+      "900": "#3e510d",
+      "950": "#2c3a09",
+    },
+    Red: {
+      "50": "#fdf2f2",
+      "100": "#f8cccc",
+      "200": "#f09999",
+      "300": "#e96666",
+      "400": "#e13333",
+      "500": "#da0000",
+      "600": "#c50000",
+      "700": "#b00000",
+      "800": "#8e0000",
+      "900": "#6b0000",
+      "950": "#470000",
+    },
+  },
+  Focus: {
+    Color: "#ffffff",
+    Thickness: "0.125rem",
+    Offset: "0.25rem",
+  },
+  Sizing: {
+    "1": "0.0625rem",
+    "2": "0.125rem",
+    "4": "0.25rem",
+    "8": "0.5rem",
+    "16": "1rem",
+    "24": "1.5rem",
+    "32": "2rem",
+    "40": "2.5rem",
+    "48": "3rem",
+    "64": "4rem",
+  },
+  Spacing: {
+    "0": "0",
+    "2": "0.125rem",
+    "4": "0.25rem",
+    "8": "0.5rem",
+    "16": "1rem",
+    "24": "1.5rem",
+    "32": "2rem",
+    "40": "2.5rem",
+    "48": "3rem",
+    "64": "4rem",
+    "96": "6rem",
+    "128": "8rem",
+    "160": "10rem",
+  },
+  Radius: {
+    Medium: "0.5rem",
+    None: "0",
+    Small: "0.25rem",
+    Large: "1rem",
+  },
+  "Icon Size": "1.5rem",
+  "Text Input Vertical Padding": "0.25rem",
+  Size: {
+    "0": "0",
+    "1": "0.0625rem",
+    "2": "0.125rem",
+    "4": "0.25rem",
+    "8": "0.5rem",
+    "12": "0.75rem",
+    "16": "1rem",
+    "20": "1.25rem",
+    "24": "1.5rem",
+    "32": "2rem",
+    "40": "2.5rem",
+    "48": "3rem",
+    "64": "4rem",
+    "80": "5rem",
+    "96": "6rem",
+    "112": "7rem",
+    "128": "8rem",
+    "160": "10rem",
+  },
+  Link: {
+    Text: {
+      Color: {
+        Primary: "#ffffff",
+        Secondary: "#95c11e",
+        Tertiary: "#ffffff",
+      },
+    },
+    Underline: {
+      Color: {
+        Tertiary: {
+          Default: "#ffffff",
+          Active: "#707070",
+        },
+        Primary: {
+          Default: "#95c11e",
+          Active: "#a8cb49",
+        },
+        Secondary: {
+          Hover: "#a8cb49",
+          Active: "#a8cb49",
+          Focus: "#a8cb49",
+        },
+      },
+      Width: {
+        Primary: "0.125rem",
+        Secondary: "0.125rem",
+        Tertiary: "0.0625rem",
+      },
+      Offset: "0.25rem",
+    },
+  },
+  Button: {
+    Text: {
+      Color: {
+        Primary: {
+          Default: "#000000",
+          Disabled: "#929292",
+        },
+        Secondary: {
+          Default: "#ffffff",
+          Disabled: "#929292",
+        },
+      },
+    },
+    Background: {
+      Color: {
+        Primary: {
+          Default: "#95c11e",
+          Hover: "#a8cb49",
+          Active: "#a8cb49",
+          Focus: "#95c11e",
+          Disabled: "#4d4d4d",
+        },
+        Secondary: {
+          Default: "#ffffff00",
+          "Default Opaque": "#ffffff",
+          Hover: "#a8cb49",
+          Active: "#a8cb49",
+          Focus: "#ffffff00",
+          Disabled: "#ffffff00",
+        },
+      },
+    },
+    Border: {
+      Color: {
+        Secondary: {
+          Default: "#95c11e",
+          Disabled: "#4d4d4d",
+        },
+      },
+    },
+  },
+};

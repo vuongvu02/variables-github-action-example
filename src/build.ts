@@ -1,5 +1,7 @@
 import * as glob from 'glob';
-import StyleDictionary, { Config } from 'style-dictionary';
+import { Config } from 'style-dictionary';
+
+import { StyleDictionary } from 'style-dictionary-utils';
 
 const inputTokenSets = glob.sync('tokens/**/*.json');
 
@@ -32,10 +34,15 @@ const getConfigs = (): Config[] => {
           files: [
             {
               destination: `variables.${tokenMode}.css`,
-              format: 'css/variables',
+              format: 'css/advanced',
               options: {
                 selector: DEFAULT_MODE !== tokenMode ? `[data-theme="${tokenMode}"]` : '',
                 outputReferences: true,
+                rules: [
+                  {
+                    atRule: '@media (min-width: 768px)',
+                  },
+                ],
               },
             },
           ],
@@ -60,11 +67,11 @@ const getConfigs = (): Config[] => {
           files: [
             {
               destination: `variables.${tokenMode}.js`,
-              format: 'javascript/es6',
+              format: 'javascript/esm',
             },
             {
               destination: 'variables.d.ts',
-              format: 'typescript/es6-declarations',
+              format: 'typescript/esm-declarations',
             },
           ],
         },

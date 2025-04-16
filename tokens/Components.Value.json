@@ -354,7 +354,7 @@
         "Secondary": {
           "Default": {
             "$type": "color",
-            "$value": "{Color.Base.Tranparent}",
+            "$value": "{Color.Base.Transparent}",
             "$description": "",
             "$extensions": {
               "com.figma": {
@@ -422,7 +422,7 @@
           },
           "Focus": {
             "$type": "color",
-            "$value": "{Color.Base.Tranparent}",
+            "$value": "{Color.Base.Transparent}",
             "$description": "",
             "$extensions": {
               "com.figma": {
@@ -439,7 +439,7 @@
           },
           "Disabled": {
             "$type": "color",
-            "$value": "{Color.Base.Tranparent}",
+            "$value": "{Color.Base.Transparent}",
             "$description": "",
             "$extensions": {
               "com.figma": {

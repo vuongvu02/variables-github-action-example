@@ -1,7 +1,7 @@
 {
   "Color": {
     "Base": {
-      "Tranparent": {
+      "Transparent": {
         "$type": "color",
         "$value": "#ffffff00",
         "$description": "",

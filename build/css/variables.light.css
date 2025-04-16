@@ -2,7 +2,7 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-:root {
+@media (min-width: 768px) {
   --font-family-primary: Titillium Web;
   --font-family-secondary: Roboto Slab;
   --font-size-xs: 0.75rem;
@@ -27,7 +27,7 @@
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
-  --color-base-tranparent: rgba(255, 255, 255, 0);
+  --color-base-transparent: rgba(255, 255, 255, 0);
   --color-base-white: #ffffff;
   --color-base-black: #000000;
   --color-neutral-50: #f5f5f5;
@@ -143,10 +143,10 @@
   --radius-small: var(--size-4);
   --radius-large: var(--size-16);
   --icon-size: var(--size-24);
-  --button-background-color-secondary-default: var(--color-base-tranparent);
+  --button-background-color-secondary-default: var(--color-base-transparent);
   --button-background-color-secondary-default-opaque: var(--color-base-white);
-  --button-background-color-secondary-focus: var(--color-base-tranparent);
-  --button-background-color-secondary-disabled: var(--color-base-tranparent);
+  --button-background-color-secondary-focus: var(--color-base-transparent);
+  --button-background-color-secondary-disabled: var(--color-base-transparent);
   --focus-thickness: var(--sizing-2);
   --focus-offset: var(--sizing-4);
   --text-input-vertical-padding: var(--spacing-4);
