@@ -82,3 +82,5 @@ export type StyleDictionaryType =
   | 'boolean'
   | 'object'
   | 'array';
+
+export type TokenSourceWithMode = { mode?: string; tokenSource: string[] };
