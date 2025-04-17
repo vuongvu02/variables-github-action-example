@@ -2,7 +2,7 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-@media (min-width: 768px) {
+:root {
   --font-family-primary: Titillium Web;
   --font-family-secondary: Roboto Slab;
   --font-size-xs: 0.75rem;
@@ -10,19 +10,19 @@
   --font-size-m: 1rem;
   --font-size-l: 1.125rem;
   --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.1875rem;
-  --font-size-5xl: 2.8125rem;
+  --font-size-2xl: 1.25rem;
+  --font-size-3xl: 1.5rem;
+  --font-size-4xl: 1.5rem;
+  --font-size-5xl: 2.1875rem;
   --font-line-height-xs: 1.125rem;
   --font-line-height-s: 1.3125rem;
   --font-line-height-m: 1.5rem;
   --font-line-height-l: 1.6875rem;
   --font-line-height-xl: 1.875rem;
-  --font-line-height-2xl: 2.25rem;
-  --font-line-height-3xl: 2.8125rem;
-  --font-line-height-4xl: 3.28125rem;
-  --font-line-height-5xl: 3.75rem;
+  --font-line-height-2xl: 1.875rem;
+  --font-line-height-3xl: 2.25rem;
+  --font-line-height-4xl: 2.25rem;
+  --font-line-height-5xl: 3rem;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;
@@ -142,14 +142,14 @@
   --radius-none: var(--size-0);
   --radius-small: var(--size-4);
   --radius-large: var(--size-16);
-  --icon-size: var(--size-24);
+  --icon-size: var(--size-32);
+  --text-input-vertical-padding: var(--size-8);
   --button-background-color-secondary-default: var(--color-base-transparent);
   --button-background-color-secondary-default-opaque: var(--color-base-white);
   --button-background-color-secondary-focus: var(--color-base-transparent);
   --button-background-color-secondary-disabled: var(--color-base-transparent);
   --focus-thickness: var(--sizing-2);
   --focus-offset: var(--sizing-4);
-  --text-input-vertical-padding: var(--spacing-4);
   --link-text-color-primary: var(--color-text-primary);
   --link-text-color-secondary: var(--color-interactive-text);
   --link-text-color-tertiary: var(--color-text-primary);

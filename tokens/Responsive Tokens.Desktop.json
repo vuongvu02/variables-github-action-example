@@ -16,7 +16,7 @@
   },
   "Text Input Vertical Padding": {
     "$type": "dimension",
-    "$value": "{Spacing.4}",
+    "$value": "{Size.4}",
     "$description": "",
     "$extensions": {
       "com.figma": {
