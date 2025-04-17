@@ -4,7 +4,6 @@ import {
   PostVariablesRequestBody,
   PostVariablesResponse,
 } from '@figma/rest-api-spec';
-import { FigmaStylesResponse, FigmaFileNodesResponse } from './types.js';
 
 export default class FigmaApi {
   private baseUrl: string;
