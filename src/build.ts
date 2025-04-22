@@ -2,12 +2,15 @@ import * as glob from 'glob';
 import { Config } from 'style-dictionary';
 import { StyleDictionary } from 'style-dictionary-utils';
 import { TokenSourceWithMode } from './types.js';
+import * as dotenv from 'dotenv';
 
-const THEME_MODES = ['light', 'dark'];
-const RESPONSIVE_MODES = ['mobile', 'desktop'];
-const MOBILE_BREAKPOINT = '768px';
-const DEFAULT_MODES = ['light', 'mobile'];
-const PRIMITIVE_SET = 'primitives';
+dotenv.config();
+
+const THEME_MODES = process.env.THEME_MODES?.split(',') || ['light', 'dark'];
+const RESPONSIVE_MODES = process.env.RESPONSIVE_MODES?.split(',') || ['mobile', 'desktop'];
+const MOBILE_BREAKPOINT = process.env.MOBILE_BREAKPOINT || '768px';
+const DEFAULT_MODES = process.env.DEFAULT_MODES?.split(',') || ['light', 'mobile'];
+const PRIMITIVE_SET_NAME = process.env.PRIMITIVE_SET_NAME || 'primitives';
 
 const inputTokenSets = glob.sync('tokens/**/*.json');
 
@@ -32,7 +35,7 @@ const getDefaultTokenSet = (): TokenSourceWithMode => {
 const getTokenSets = (modes: string[]): TokenSourceWithMode[] => {
   return modes.map((currentMode) => {
     const tokenSource = inputTokenSets.filter((tokenPath) => {
-      if (tokenPath.toLowerCase().includes(PRIMITIVE_SET)) {
+      if (tokenPath.toLowerCase().includes(PRIMITIVE_SET_NAME)) {
         return true;
       }
       return getModeFromFilePath(tokenPath) === currentMode;
@@ -119,8 +122,8 @@ const getConfigs = (): Config[] => {
 async function run() {
   const configs = getConfigs();
 
-  configs.forEach(async (config: Config, index) => {
-    const sd = new StyleDictionary(config, { verbosity: 'verbose' });
+  configs.forEach(async (config, index) => {
+    const sd = new StyleDictionary(config);
 
     // only clean the build directory on the first run
     if (index === 0) {

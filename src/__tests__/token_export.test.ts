@@ -1,5 +1,5 @@
 import { GetLocalVariablesResponse } from '@figma/rest-api-spec';
-import { tokenFilesFromLocalVariables } from './token_export.js';
+import { tokenFilesFromLocalVariables } from '../sync-tokens.js';
 
 describe('tokenFilesFromLocalVariables', () => {
   it('ignores remote variables', () => {
