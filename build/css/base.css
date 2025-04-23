@@ -87,11 +87,11 @@
   --color-background-alternative-2: var(--color-green-100);
   --color-background-alternative-3: var(--color-neutral-500);
   --color-icon-white: var(--color-base-white);
+  --color-divider: var(--color-neutral-200);
   --color-elevation-background-1: var(--color-base-white);
   --color-elevation-background-2: var(--color-base-white);
   --color-elevation-icons-white: var(--color-neutral-50);
   --color-elevation-icons-black: var(--color-neutral-950);
-  --color-divider: var(--color-neutral-200);
   --color-tag: var(--color-green-200);
   --color-text-primary: var(--color-base-black);
   --color-text-secondary: var(--color-neutral-500);

@@ -97,6 +97,9 @@ const getConfigs = (): Config[] => {
           {
             destination: `${mode}.scss`,
             format: 'scss/variables',
+            options: {
+              outputReferences: true,
+            },
           },
         ],
       },
